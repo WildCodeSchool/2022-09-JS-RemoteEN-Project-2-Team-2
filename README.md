@@ -1,7 +1,9 @@
 ## Concept
 
-This template is meant to serve as a foundation for every P2/P3 following the React-Express-MySQL stack, as learned in Wild Code School.
-It's pre-configured with a set of tools which'll help students produce industry-quality and easier-to-maintain code, while staying as simple as possible to use.
+The second project of our group is based on React.js and our goal is to make a responsive weather application, named Suni.
+The user will be able to get, for the locations he chooses, key informations about the weather : forecast, temperatures, wind speed, humidity, air quality, sunrise and sunset hours.
+A feature would allow the user to save up locations, and they would be able to get a forecast up to 7 days.
+We would also possibly integrate a subscription to a newsletter that would send up daily or weekly forecasts to the user.
 
 ## Setup & Use
 
