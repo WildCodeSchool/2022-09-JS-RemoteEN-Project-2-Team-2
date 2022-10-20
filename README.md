@@ -1,9 +1,13 @@
 ## Concept
 
 The second project of our group is based on React.js and our goal is to make a responsive weather application, named Suni.
+
 The user will be able to get, for the locations he chooses, key informations about the weather : forecast, temperatures, wind speed, humidity, air quality, sunrise and sunset hours.
+
 A feature would allow the user to save up locations, and they would be able to get a forecast up to 7 days.
 We would also possibly integrate a subscription to a newsletter that would send up daily or weekly forecasts to the user.
+
+You can find the wireframes on this link : https://www.figma.com/file/3twqmFxQq0SZeGTPdNYUuz/Untitled?node-id=0%3A1
 
 ## Setup & Use
 
