@@ -33,7 +33,8 @@
       {
         "assert": "either"
       }
-    ]
+    ],
+    "prettier/prettier":["error",{"endOfLine":"auto"}]
   },
   "settings": {
     "import/resolver": {
