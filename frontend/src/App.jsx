@@ -1,12 +1,12 @@
+import Search from "@components/search/search";
 import Home from "@pages/Home";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-      <p>coucou test2</p>
+    <div>
+      <Search />
     </div>
   );
 }
