@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import "./search.css";
 
-const Search = () => {
-    return (
-        <div>
-            <h1>Hello World</h1>
-        </div>
-    );
+function Search() {
+  return (
+    <div className="containerSearch">
+      <h1>Hello World</h1>
+    </div>
+  );
 }
 
 export default Search;

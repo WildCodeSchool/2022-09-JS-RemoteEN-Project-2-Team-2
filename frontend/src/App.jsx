@@ -1,5 +1,4 @@
 import Search from "@components/search/search";
-import Home from "@pages/Home";
 
 import "./App.css";
 
