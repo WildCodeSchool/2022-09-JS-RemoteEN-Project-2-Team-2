@@ -1,11 +1,16 @@
+import "./App.css";
 import Search from "@components/search/search";
 
-import "./App.css";
-
 function App() {
+  const handleOnSearchChange = (searchData) => {
+    const [lat, lon] = searchData.value.split(" ");
+    console.warn(lat);
+    console.warn(lon);
+  };
+
   return (
     <div>
-      <Search />
+      <Search onSearchChange={handleOnSearchChange} />
     </div>
   );
 }
