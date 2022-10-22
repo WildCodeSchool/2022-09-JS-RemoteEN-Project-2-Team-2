@@ -1,10 +1,11 @@
 import React from "react";
+import { AsyncPaginate } from "react-select-async-paginate";
 import "./search.css";
 
 function Search() {
   return (
     <div className="containerSearch">
-      <h1>Hello World</h1>
+      <AsyncPaginate placeholder="enter location" />
     </div>
   );
 }

@@ -1,4 +1,33 @@
 .containerSearch {
-    max-width: 50%;
+    width: 50%;
+    min-width: 50%;
     margin: 0px auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+/* Note : Since I was not able to style the Asynpaginate component, I copied the selector path in Dev Tools to select and style inside it*/
+#root > div > div > div > div {
+    border-radius: 50px;
+}
+
+#root > div > div > div > div > div.css-4xgw5l-IndicatorsContainer2 > span {
+    display: none;
+}
+
+#root > div > div > div > div > div.css-4xgw5l-IndicatorsContainer2 > div > svg {
+    color:rgb(255, 255, 255);
+}
+
+#root > div > div > div > div > div.css-4xgw5l-IndicatorsContainer2 {
+    background-image: url("../../assets/searchgrey.png");
+    padding-right: 5px;
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#react-select-3-placeholder {
+    padding-left: 20px;
 }
