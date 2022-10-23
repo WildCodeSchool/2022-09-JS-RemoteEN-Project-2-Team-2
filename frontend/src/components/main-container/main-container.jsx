@@ -2,12 +2,24 @@ import React from "react";
 import "./main-container.css";
 
 function MainContainer() {
+  const weekday = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const current = new Date();
+  const day = weekday[current.getDay() + 2];
+
   return (
     <div className="main-container">
       <div className="days">
         <h3>Today</h3>
         <h3>Tomorrow</h3>
-        <h3>Thursday</h3>
+        <h3>{day}</h3>
       </div>
       <div className="datas">
         <div className="wind">
