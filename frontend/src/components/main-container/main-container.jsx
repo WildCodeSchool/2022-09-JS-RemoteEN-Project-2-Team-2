@@ -38,11 +38,15 @@ function MainContainer() {
       <div className="sun-position">
         <div className="sunrise">
           <h3>Sunrise</h3>
-          <p className="sunrise-time">7:53</p>
+          <div className="border-Sunrise">
+            <p className="sunrise-time">7:53</p>
+          </div>
         </div>
         <div className="sunset">
           <h3>Sunset</h3>
-          <p className="sunset-time">18:15</p>
+          <div className="border-Sunset">
+            <p className="sunset-time">18:15</p>
+          </div>
         </div>
       </div>
     </div>

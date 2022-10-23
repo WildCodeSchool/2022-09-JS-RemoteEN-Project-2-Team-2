@@ -31,7 +31,6 @@ border-radius: 50%;
 width: 81.25px;
 height: 81.25px;
 border: 2px;
-border-color: linear-gradient(180deg, #FF7A00 100%, #FFE600 0%);
 background: linear-gradient(180deg, #FFE600 0%, #FF7A00 100%);
 display: flex;
 align-items: center;
@@ -44,7 +43,6 @@ font-weight: 500;
     border-radius: 50%;
     width: 81.25px;
     height: 81.25px;
-    border: 2px;
     background: linear-gradient(180deg, #FF7A00 0%, #FF4D00 100%);
     display: flex;
     align-items: center;
@@ -52,7 +50,23 @@ font-weight: 500;
     font-size: 16px;
     font-weight: 500;
     
-    }
+}
+
+.border-Sunrise{
+    background:linear-gradient(180deg, #FFFF 10%, #FF7A00 100%);
+    width: 81.25px;
+    height: 81.25px;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.border-Sunset{
+    background:linear-gradient(180deg, #FFFF 10%, #FF4D00 100%);
+    width: 81.25px;
+    height: 81.25px;
+    border-radius: 50%;
+    padding: 2px;
+}
 
 .sun-position{
     display: flex;
