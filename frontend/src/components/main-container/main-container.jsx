@@ -17,9 +17,9 @@ function MainContainer() {
   return (
     <div className="main-container">
       <div className="days">
-        <h3>Today</h3>
-        <h3>Tomorrow</h3>
-        <h3>{day}</h3>
+        <h3 className="dayOfWeek">Today</h3>
+        <h3 className="dayOfWeek">Tomorrow</h3>
+        <h3 className="dayOfWeek">{day}</h3>
       </div>
       <div className="datas">
         <div className="wind">

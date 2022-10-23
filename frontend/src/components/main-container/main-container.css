@@ -67,6 +67,8 @@ font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .wind{
@@ -95,4 +97,13 @@ text-align: center;
 text-transform: uppercase;
 
 color: #515253;
+margin-bottom: 20px;
+}
+
+.dayOfWeek.dayOfWeek:active{
+    --color: #1d272c;
+    --position: center bottom;
+    --width: 20px;
+    --height: 1px;
+    background: linear-gradient(var(--color), var(--color)) var(--position) / var(--width) var(--height) no-repeat;
 }
