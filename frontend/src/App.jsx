@@ -1,12 +1,13 @@
-import Home from "@pages/Home";
+import MainContainer from "./components/main-container/main-container";
+import React from "react";
 
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <p>coucou hello!</p>
+      <MainContainer />
+      
     </div>
   );
 }
