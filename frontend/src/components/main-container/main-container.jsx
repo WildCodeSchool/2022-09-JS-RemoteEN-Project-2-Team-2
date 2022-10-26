@@ -1,5 +1,6 @@
 import React from "react";
 import "./main-container.css";
+import HoursForecast from "../HoursForecast/HoursForecast";
 
 function MainContainer() {
   const weekday = [
@@ -21,18 +22,23 @@ function MainContainer() {
         <h3 className="dayOfWeek">Tomorrow</h3>
         <h3 className="dayOfWeek">{day}</h3>
       </div>
+      <div>
+        <HoursForecast />
+      </div>
       <div className="datas">
         <div className="wind">
           <h3>WIND</h3>
-          <p>26 km/h</p>
+          <p className="incorporated-data">26 km/h</p>
         </div>
+        <div className="separator" />
         <div className="humidity">
           <h3>HUMIDITY</h3>
-          <p>30%</p>
+          <p className="incorporated-data">30%</p>
         </div>
+        <div className="separator" />
         <div>
-          <h3>AQI</h3>
-          <p>38 good</p>
+          <h3>FEELS LIKE</h3>
+          <p className="incorporated-data">14°</p>
         </div>
       </div>
       <div className="sun-position">

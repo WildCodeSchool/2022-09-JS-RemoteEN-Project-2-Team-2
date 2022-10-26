@@ -1,6 +1,9 @@
 .main-container{
     background-color: white;
     border-radius: 20px 20px 0 0;
+    padding-bottom: 28px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 h3{
@@ -13,18 +16,18 @@ h3{
 }
 
 p{
-    font-family: 'Roboto';
+font-family: 'Roboto';
 font-style: normal;
-font-weight: 500;
 font-size: 12px;
 line-height: 32px;
 margin: 0;
 font-weight: 400;
 text-align: center;
 text-transform: lowercase;
-
 color: #000000;
 }
+
+
 
 .sunrise-time{
 border-radius: 50%;
@@ -49,7 +52,6 @@ font-weight: 500;
     justify-content: center;
     font-size: 16px;
     font-weight: 500;
-    
 }
 
 .border-Sunrise{
@@ -71,9 +73,7 @@ font-weight: 500;
 .sun-position{
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-right: 20%;
-    margin-left: 20%;
+    justify-content: center;   
     justify-content: space-evenly;
 }
 
@@ -82,24 +82,20 @@ font-weight: 500;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
 }
 
-.wind{
-    border-right: solid 1px #E3E3E3;
-    padding-right: 5%;
-    margin-right: 5%;
-}
 
-.humidity{
-    border-right: solid 1px #E3E3E3;
-    padding-right: 5%;
-    margin-right: 5%;
+.separator{
+    width: 50px;
+    height: 1px;
+    background:linear-gradient(180deg, #EDEDED 80%, #E8E8E9 69%);
+    transform: rotate(90deg);
 }
 
 .days{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 300;
@@ -107,11 +103,13 @@ font-size: 14px;
 line-height: 32px;
 padding-left: 15px;
 padding-right: 15px;
+padding-top: 17px;
+padding-bottom: 15px;
 text-align: center;
 text-transform: uppercase;
 
 color: #515253;
-margin-bottom: 20px;
+
 }
 
 .dayOfWeek.dayOfWeek:active{
@@ -120,4 +118,9 @@ margin-bottom: 20px;
     --width: 20px;
     --height: 1px;
     background: linear-gradient(var(--color), var(--color)) var(--position) / var(--width) var(--height) no-repeat;
+}
+
+.incorporated-data{
+    margin-top: -9px;
+    font-weight: bold;
 }
