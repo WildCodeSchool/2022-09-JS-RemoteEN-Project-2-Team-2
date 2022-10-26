@@ -1,9 +1,8 @@
 import React from "react";
 import "./App.css";
-import sunny from "./assets/icons/sunny.svg";
 import logo from "./assets/logo/suni_logo.png";
 
-const App = () => {
+function App() {
   return (
     <div>
       <div className="weatherMain">
@@ -17,6 +16,6 @@ const App = () => {
       </div>
     </div>
   );
-};
+}
 
 export default App;
