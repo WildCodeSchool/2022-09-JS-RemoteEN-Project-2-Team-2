@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Home />
-      <p>coucou</p>
+      <p>test Current Weather</p>
     </div>
   );
 }
