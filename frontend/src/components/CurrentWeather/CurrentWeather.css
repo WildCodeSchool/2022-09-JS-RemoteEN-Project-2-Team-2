@@ -1,0 +1,14 @@
+.imgWeather {
+    width: 20%;
+  }
+  
+  .myCityTem {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .myWeather {
+    font-size: 2rem;
+    font-weight: 500;
+  }

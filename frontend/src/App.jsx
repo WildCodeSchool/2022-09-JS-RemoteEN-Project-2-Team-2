@@ -1,12 +1,12 @@
+import CurrentWeather from "@components/CurrentWeather/CurrentWeather";
 import Home from "@pages/Home";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-      <p>test Current Weather</p>
+    <div>
+      <CurrentWeather />
     </div>
   );
 }
