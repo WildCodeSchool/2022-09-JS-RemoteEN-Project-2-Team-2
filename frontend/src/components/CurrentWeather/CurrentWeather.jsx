@@ -1,6 +1,6 @@
 import React from "react";
 import "./CurrentWeather.css";
-import clearSkyD from "../../assets/icons/clear-sky-.svg";
+import clearSkyD from "../../assets/icons/clearSkyD.svg";
 
 function CurrentWeather() {
   return (
