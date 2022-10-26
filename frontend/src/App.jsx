@@ -1,5 +1,4 @@
 import CurrentWeather from "@components/CurrentWeather/CurrentWeather";
-import Home from "@pages/Home";
 
 import "./App.css";
 

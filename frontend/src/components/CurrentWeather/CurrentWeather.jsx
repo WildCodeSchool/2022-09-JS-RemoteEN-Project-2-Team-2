@@ -1,6 +1,6 @@
 import React from "react";
 import "./CurrentWeather.css";
-import sunny from "../../assets/icons/sunny.svg"
+import sunny from "../../assets/icons/sunny.svg";
 
 function CurrentWeather() {
   return (
