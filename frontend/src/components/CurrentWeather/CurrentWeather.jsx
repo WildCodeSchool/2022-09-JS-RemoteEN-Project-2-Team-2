@@ -7,8 +7,8 @@ function CurrentWeather() {
     <div>
       <div className="weatherMain">
         <img className="imgWeather" src={clearSkyD} alt="Sunny" />
-        <p className="myCityTem">16°</p>
-        <p className="myWeather">Cloudy</p>
+        <p className="myCityTem">17°</p>
+        <p className="myWeather">Clear Skies</p>
       </div>
     </div>
   );
