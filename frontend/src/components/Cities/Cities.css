@@ -1,22 +1,22 @@
 .saved-components{
     grid-template-columns: repeat(2, 1fr);
     display: grid;
-    align-items: stretch;
+    align-items: center;
     justify-items: center;
-    justify-content: space-between;
+    
 }
 
 .saved-icon{
-    width: 30px;
-    height:30px;
+    width: auto;
+    height:70px;
 }
 .right{
     display: flex;
-    margin-right: 33px;
+    align-items: center;
 }
 
 .left{
-    margin-left: 28px;
+
 }
 
 .cities-name-saved{
@@ -48,7 +48,7 @@ color: #D9D9D9;
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
-font-size: 16px;
+font-size: 18px;
 line-height: 24px;
 
 text-transform: uppercase;

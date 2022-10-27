@@ -9,7 +9,6 @@ function SavedLocations() {
     backgroundImage: `url(${Rectangle})`,
     backgroundRepeat: "repeat-y",
     backgroundSize: "50% auto",
-    ZIndex: "3",
   };
   return (
     <div>
@@ -17,12 +16,13 @@ function SavedLocations() {
         <div style={background}>
           <div className="button-flexbox">
             <button className="adding-saved-locations" type="button">
-              <img src={button} alt="" />
+              <img className="img-button" src={button} alt="" />
             </button>
           </div>
           <h3 className="saved-title">SAVED LOCATIONS</h3>
           <div className="flex-box-container">
             <div className="saved-cities-components">
+              <Cities />
               <Cities />
               <Cities />
               <Cities />
