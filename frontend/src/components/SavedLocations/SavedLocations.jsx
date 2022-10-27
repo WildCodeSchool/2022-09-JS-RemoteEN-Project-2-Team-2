@@ -9,6 +9,7 @@ function SavedLocations() {
     backgroundImage: `url(${Rectangle})`,
     backgroundRepeat: "repeat-y",
     backgroundSize: "50% auto",
+    borderRadius: "20px 20px 0px 0px",
   };
   return (
     <div>
@@ -19,7 +20,9 @@ function SavedLocations() {
               <img className="img-button" src={button} alt="" />
             </button>
           </div>
-          <h3 className="saved-title">SAVED LOCATIONS</h3>
+          <div className="box-saved-locations">
+            <h3 className="saved-title">SAVED LOCATIONS</h3>
+          </div>
           <div className="flex-box-container">
             <div className="saved-cities-components">
               <Cities />

@@ -14,7 +14,7 @@
 
 .saved-title{
     text-align: left;
-    margin-left: 28px;
+    
 }
 
 .adding-saved-locations{
@@ -34,4 +34,20 @@
 .img-button{
     object-fit: none;
     height: 64px;
+}
+
+.box-saved-locations{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 32px;
+margin-left: 28px;
+
+text-align: center;
+text-transform: uppercase;
+
+color: #515253;
 }
