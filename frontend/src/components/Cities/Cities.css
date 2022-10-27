@@ -1,5 +1,5 @@
 .saved-components{
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
     display: grid;
     align-items: stretch;
     justify-items: center;

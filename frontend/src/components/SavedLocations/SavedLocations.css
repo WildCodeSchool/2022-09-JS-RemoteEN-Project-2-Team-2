@@ -4,7 +4,12 @@
     background: #FFFFFF;
     border-radius: 20px 20px 0px 0px;
     border: 1px solid #FFFFFF;
+    background: 
+    linear-gradient(179.99deg, rgba(187, 187, 187, 0.65) 28.45%, rgba(242, 242, 242, 0.89) 85.34%);
+
 }
+
+
 
 .saved-title{
     text-align: left;
