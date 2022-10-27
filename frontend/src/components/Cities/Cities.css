@@ -1,17 +1,21 @@
+.saved-cities-components{
+    padding-bottom: 37px;
+}
+
 .saved-components{
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-items: center;
     justify-content: space-between;
-
+height: 50px;
     margin-left: 28px;
     margin-right: 33px;
     
 }
 
 .saved-icon{
-    width: auto;
-    height:70px;
+    width: 70px;
+    height:auto;
 }
 .right{
     display: flex;
@@ -38,8 +42,8 @@ font-style: normal;
 font-weight: bold;
 font-size: 10px;
 line-height: 13px;
-margin-top: 8;
-
+margin-top: 0px;
+text-align: left;
 text-transform: capitalize;
 
 color: #D9D9D9;
@@ -50,10 +54,23 @@ color: #D9D9D9;
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
-font-size: 18px;
+font-size: 16px;
 line-height: 24px;
 
 text-transform: uppercase;
-
+margin-left:14px;
 color: #515253;
+}
+
+.cities-button-flexbox{
+    display: flex;
+    align-items: flex-start;
+}
+
+.remove-button{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    margin-right: 7px;
 }

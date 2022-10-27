@@ -1,5 +1,5 @@
 import React from "react";
-import button from "../../assets/Button.png";
+import button from "../../assets/Button.svg";
 import Cities from "../Cities/Cities";
 import "./SavedLocations.css";
 import Rectangle from "../../assets/Rectangle.png";
@@ -25,7 +25,6 @@ function SavedLocations() {
           </div>
           <div className="flex-box-container">
             <div className="saved-cities-components">
-              <Cities />
               <Cities />
               <Cities />
               <Cities />
