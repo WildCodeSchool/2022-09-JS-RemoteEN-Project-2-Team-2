@@ -2,6 +2,7 @@ import React from "react";
 import Search from "@components/search/search";
 import CurrentWeather from "@components/CurrentWeather/CurrentWeather";
 import MainContainer from "./components/main-container/main-container";
+import SavedLocations from "./components/SavedLocations/SavedLocations";
 import "./App.css";
 import logo from "./assets/logo/suni_logo.png";
 
@@ -13,6 +14,7 @@ function App() {
   };
 
   return (
+    <div className="App">
     <div>
       <Search onSearchChange={handleOnSearchChange} />
       <div className="weatherMain">
@@ -23,6 +25,7 @@ function App() {
       </div>
       <CurrentWeather />
       <MainContainer />
+      <SavedLocations />
       <div className="weatherMain">
         <div className="myFooter">
           <img className="sunnyLogo" src={logo} alt="" />
