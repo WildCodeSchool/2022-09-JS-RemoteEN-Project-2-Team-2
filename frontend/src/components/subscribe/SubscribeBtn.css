@@ -1,17 +1,15 @@
 button {
-
-    display: inline;
-    border-radius: 10rem;
-    color: #000000;
-    text-transform: uppercase;
-    font-size: 1rem;
-    width: 360px;
-    height: 63px;
-    background-color: white;
-    border: none;
+  display: inline;
+  border-radius: 10rem;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 1rem;
+  width: 90%;
+  height: 63px;
+  background-color: rgb(173, 172, 172);
+  border: none;
 }
 
 button:active {
-    transform: scale(0.98);
-
+  transform: scale(0.98);
 }

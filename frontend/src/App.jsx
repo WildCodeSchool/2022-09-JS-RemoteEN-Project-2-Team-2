@@ -1,12 +1,12 @@
 import Home from "@pages/Home";
+import SubscribeBtn from "@components/subscribe/SubscribeBtn";
 
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <p>coucou sub test</p>
+      <SubscribeBtn />
     </div>
   );
 }
