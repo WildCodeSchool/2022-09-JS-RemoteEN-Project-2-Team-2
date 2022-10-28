@@ -1,5 +1,6 @@
 import React from "react";
 import Search from "@components/search/search";
+import CurrentWeather from "@components/CurrentWeather/CurrentWeather";
 import "./App.css";
 import logo from "./assets/logo/suni_logo.png";
 
@@ -18,6 +19,9 @@ function App() {
         <p className="myDate">
           26 October, <span className="weekDay">Wednesday</span>
         </p>
+      </div>
+      <CurrentWeather />
+      <div className="weatherMain">
         <div className="myFooter">
           <img className="sunnyLogo" src={logo} alt="" />
         </div>
