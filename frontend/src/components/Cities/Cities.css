@@ -60,7 +60,7 @@
 
 .cities-button-flexbox {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .remove-button {
