@@ -3,24 +3,24 @@ import "./main-container.css";
 import HoursForecast from "../HoursForecast/HoursForecast";
 
 function MainContainer() {
-  const weekday = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  const current = new Date();
-  const day = weekday[current.getDay() + 2];
+  // const weekday = [
+  //   "Sunday",
+  //   "Monday",
+  //   "Tuesday",
+  //   "Wednesday",
+  //   "Thursday",
+  //   "Friday",
+  //   "Saturday",
+  // ];
+  // const current = new Date();
+  // const day = weekday[current.getDay() + 2];
 
   return (
     <div className="main-container">
       <div className="days">
         <h3 className="dayOfWeek">Today</h3>
         <h3 className="dayOfWeek">Tomorrow</h3>
-        <h3 className="dayOfWeek">{day}</h3>
+        <h3 className="dayOfWeek">Sunday</h3>
       </div>
       <div>
         <HoursForecast />

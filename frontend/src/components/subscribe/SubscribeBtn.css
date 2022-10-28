@@ -8,8 +8,15 @@
   height: 63px;
   background-color: rgb(255, 255, 255);
   border: none;
+  margin-bottom: 50px; 
 }
 
 .subButton:active {
   transform: scale(0.98);
+}
+
+.subscribe-container-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
