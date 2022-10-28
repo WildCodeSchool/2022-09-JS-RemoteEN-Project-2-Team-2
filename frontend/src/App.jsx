@@ -1,6 +1,7 @@
 import React from "react";
 import Search from "@components/search/search";
 import CurrentWeather from "@components/CurrentWeather/CurrentWeather";
+import MainContainer from "./components/main-container/main-container";
 import "./App.css";
 import logo from "./assets/logo/suni_logo.png";
 
@@ -21,6 +22,7 @@ function App() {
         </p>
       </div>
       <CurrentWeather />
+      <MainContainer />
       <div className="weatherMain">
         <div className="myFooter">
           <img className="sunnyLogo" src={logo} alt="" />
