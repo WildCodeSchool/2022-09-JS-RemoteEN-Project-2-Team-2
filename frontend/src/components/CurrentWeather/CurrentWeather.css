@@ -1,23 +1,23 @@
 .imgWeather {
-    width: 60%;
-  }
-  
-  .myCityTem {
-    font-size: 5rem;
-    font-weight: 700;
-    margin: 0;
-  }
-  
-  .myWeather {
-    font-size: 2rem;
-    font-weight: 500;
-    margin:0;
-  }
+  width: 60%;
+}
 
-  .weatherMain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    color: rgba(0, 0, 0, 0.675);
-  }
+.myCityTem {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.myWeather {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.weatherMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: rgba(0, 0, 0, 0.675);
+}

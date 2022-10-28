@@ -4,7 +4,9 @@ import "./SubscribeBtn.css";
 function SubscribeBtn() {
   return (
     <div>
-      <button type="button">Subscribe now</button>
+      <button className="subButton" type="button">
+        Subscribe now
+      </button>
     </div>
   );
 }

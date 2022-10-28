@@ -7,21 +7,27 @@
 }
 
 /* Note : Since I was not able to style the Asynpaginate component, I copied the selector path in Dev Tools to select and style inside it*/
-#root > div > div > div div {
+/* #root > div > div > div div {
   border-radius: 17px;
 }
 
 #root > div > div > div > div:focus {
-    border-color: brown;
+  border-color: brown;
 }
 
 #root > div > div > div > div > div.css-4xgw5l-IndicatorsContainer2 > span {
   display: none;
 }
 
-#root > div > div > div > div > div.css-1kwwvb1-ValueContainer2 > div.css-qc6sy-singleValue {
-    text-align: center;
-    padding-left: 25px;
+#root
+  > div
+  > div
+  > div
+  > div
+  > div.css-1kwwvb1-ValueContainer2
+  > div.css-qc6sy-singleValue {
+  text-align: center;
+  padding-left: 25px;
 }
 
 #root
@@ -45,4 +51,4 @@
 
 #react-select-3-placeholder {
   padding-left: 20px;
-}
+} */
