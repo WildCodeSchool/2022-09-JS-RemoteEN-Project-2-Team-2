@@ -1,22 +1,21 @@
-.hours-box{
-    
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 10px;
-      
-    background: linear-gradient(179.99deg, rgba(187, 187, 187, 0.65) 28.45%, rgba(242, 242, 242, 0.89) 85.34%);
-mix-blend-mode: normal;
-backdrop-filter: blur(5px);
+.hours-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+
+  background: linear-gradient(179.99deg, rgba(187, 187, 187, 0.65) 28.45%, rgba(242, 242, 242, 0.89) 85.34%);
+  mix-blend-mode: normal;
+  backdrop-filter: blur(5px);
 }
 
-.img-hours{
-    width: 47.39px;
+.img-hours {
+  width: 47.39px;
 }
 
-.hour-weather{
-    grid-template-rows: repeat(3, auto);
-    display: grid;
-    align-items: stretch;
-    justify-items: center;
+.hour-weather {
+  grid-template-rows: repeat(3, auto);
+  display: grid;
+  align-items: stretch;
+  justify-items: center;
+  margin-top: 5%;
 }
-

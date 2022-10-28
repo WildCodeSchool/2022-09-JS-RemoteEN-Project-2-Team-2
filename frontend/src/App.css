@@ -8,14 +8,7 @@ body {
   background: linear-gradient(180deg, #ffffff 0%, #d9d9d9 100%);
 }
 
-.weatherMain {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  color: rgba(0, 0, 0, 0.675);
-}
+
 
 .myCity {
   font-size: 2rem;
