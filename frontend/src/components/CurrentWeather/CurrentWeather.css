@@ -1,5 +1,5 @@
 .imgWeather {
-    width: 20%;
+    width: 50%;
   }
   
   .myCityTem {
@@ -19,4 +19,5 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    color: rgba(0, 0, 0, 0.675);
   }
