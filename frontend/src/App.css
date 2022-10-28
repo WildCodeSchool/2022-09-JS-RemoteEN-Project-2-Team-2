@@ -5,52 +5,46 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(180deg, #ffffff 0%, #d9d9d9 100%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weatherMain {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  color: rgba(0, 0, 0, 0.675);
 }
 
-.App-link {
-  color: #61dafb;
+.myCity {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.myDate {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 5px;
 }
 
-button {
-  font-size: calc(10px + 2vmin);
+.weekDay {
+  font-weight: 500;
 }
+
+.myFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sunnyLogo {
+  width: 5rem;
+}
+
+@media (min-width: 1024px) {
+}
+
+
