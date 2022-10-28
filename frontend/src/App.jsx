@@ -1,9 +1,9 @@
 import React from "react";
-import Search from "@components/search/search";
-import CurrentWeather from "@components/CurrentWeather/CurrentWeather";
+import Search from "./components/search/search";
+import CurrentWeather from "./components/CurrentWeather/CurrentWeather";
 import MainContainer from "./components/main-container/main-container";
 import SavedLocations from "./components/SavedLocations/SavedLocations";
-import SubscribeBtn from "@components/subscribe/SubscribeBtn";
+import SubscribeBtn from "./components/subscribe/SubscribeBtn";
 import "./App.css";
 import logo from "./assets/logo/suni_logo.png";
 
