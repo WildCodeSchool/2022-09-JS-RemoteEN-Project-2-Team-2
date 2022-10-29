@@ -1,6 +1,5 @@
 import React from "react";
 import Search from "./components/search/search";
-import CurrentWeather from "./components/CurrentWeather/CurrentWeather";
 import MainContainer from "./components/main-container/main-container";
 import SavedLocations from "./components/SavedLocations/SavedLocations";
 import SubscribeBtn from "./components/subscribe/SubscribeBtn";
@@ -23,7 +22,6 @@ function App() {
           26 October, <span className="weekDay">Wednesday</span>
         </p>
       </div>
-      <CurrentWeather />
       <MainContainer />
       <SavedLocations />
       <SubscribeBtn />
