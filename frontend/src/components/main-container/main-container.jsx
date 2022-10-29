@@ -1,9 +1,26 @@
 import React from "react";
 import "./main-container.css";
 import HoursForecast from "../HoursForecast/HoursForecast";
+import brokenCloudsD from "../../assets/icons/brokenCloudsD.svg";
+import brokenCloudsN from "../../assets/icons/brokenCloudsN.svg";
 import clearSkyD from "../../assets/icons/clearSkyD.svg";
+import clearSkyN from "../../assets/icons/clearSkyN.svg";
+import fewCloudsD from "../../assets/icons/fewCloudsD.svg";
+import fewCloudsN from "../../assets/icons/fewCloudsN.svg";
+import mistD from "../../assets/icons/mistD.svg";
+import mistN from "../../assets/icons/mistN.svg";
+import rainD from "../../assets/icons/rainD.svg";
+import rainN from "../../assets/icons/rainN.svg";
+import scatteredCloudsD from "../../assets/icons/scatteredCloudsD.svg";
+import scatteredCloudsN from "../../assets/icons/scatteredCloudsN.svg";
+import showerRainD from "../../assets/icons/showerRainD.svg";
+import showerRainN from "../../assets/icons/showerRainN.svg";
+import snowD from "../../assets/icons/snowD.svg";
+import snowN from "../../assets/icons/snowN.svg";
+import thunderstormD from "../../assets/icons/thunderstormD.svg";
+import thunderstormN from "../../assets/icons/thunderstormN.svg";
 
-function MainContainer() {
+function MainContainer({ data }) {
   // const weekday = [
   //   "Sunday",
   //   "Monday",
@@ -19,9 +36,36 @@ function MainContainer() {
   return (
     <div>
       <div className="weatherMain">
-        <img className="imgWeather" src={clearSkyD} alt="Sunny" />
-        <p className="myCityTem">17°</p>
-        <p className="myWeather">Clear Skies</p>
+        <img
+          className="imgWeather"
+          src={
+            data.weather[0].description === "broken clouds"
+              ? brokenCloudsD
+              : data.weather[0].description === "clear sky"
+              ? clearSkyD
+              : data.weather[0].description === "few clouds"
+              ? fewCloudsD
+              : data.weather[0].description === "mist"
+              ? mistD
+              : data.weather[0].description === "rain" ||
+                data.weather[0].description === "light rain" ||
+                data.weather[0].description === "moderate rain"
+              ? rainD
+              : data.weather[0].description === "scattered clouds" ||
+                data.weather[0].description === "overcast clouds"
+              ? scatteredCloudsD
+              : data.weather[0].description === "shower rain"
+              ? showerRainD
+              : data.weather[0].description === "snow"
+              ? snowD
+              : data.weather[0].description === "thunder"
+              ? thunderstormD
+              : rainN
+          }
+          alt="Sunny"
+        />
+        <p className="myCityTem">{Math.round(data.main.temp)}°</p>
+        <p className="myWeather">{data.weather[0].description}</p>
       </div>
       <div className="main-container">
         <div className="days">
