@@ -36,6 +36,12 @@ function MainContainer({ data }) {
   return (
     <div>
       <div className="weatherMain">
+        <p className="myCity">Hamburg</p>
+        <p className="myDate">
+          26 October, <span className="weekDay">Wednesday</span>
+        </p>
+      </div>
+      <div className="weatherMain">
         <img
           className="imgWeather"
           src={

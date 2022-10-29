@@ -36,12 +36,6 @@ function App() {
   return (
     <div>
       <Search onSearchChange={handleOnSearchChange} />
-      <div className="weatherMain">
-        <p className="myCity">Hamburg</p>
-        <p className="myDate">
-          26 October, <span className="weekDay">Wednesday</span>
-        </p>
-      </div>
       {currentWeather && <MainContainer data={currentWeather} />}
       <SavedLocations />
       <SubscribeBtn />
