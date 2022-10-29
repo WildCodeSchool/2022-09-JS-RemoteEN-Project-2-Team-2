@@ -123,7 +123,9 @@ function MainContainer({ data }) {
           <div className="separator" />
           <div>
             <h3>FEELS LIKE</h3>
-            <p className="incorporated-data">{Math.round(data.main.feels_like)}°C</p>
+            <p className="incorporated-data">
+              {Math.round(data.main.feels_like)}°C
+            </p>
           </div>
         </div>
         <div className="sun-position">
