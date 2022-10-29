@@ -21,17 +21,34 @@ import thunderstormD from "../../assets/icons/thunderstormD.svg";
 import thunderstormN from "../../assets/icons/thunderstormN.svg";
 
 function MainContainer({ data }) {
-  // const weekday = [
-  //   "Sunday",
-  //   "Monday",
-  //   "Tuesday",
-  //   "Wednesday",
-  //   "Thursday",
-  //   "Friday",
-  //   "Saturday",
-  // ];
-  // const current = new Date();
-  // const day = weekday[current.getDay() + 2];
+  const dayOfWeekDigit = new Date().getDay();
+  let day = dayOfWeekDigit + 2;
+
+  switch (day) {
+    case 2:
+      day = "Tuesday";
+      break;
+    case 3:
+      day = "Wednesday";
+      break;
+    case 4:
+      day = "Thursday";
+      break;
+    case 5:
+      day = "Friday";
+      break;
+    case 6:
+      day = "Saturday";
+      break;
+    case 7:
+      day = "Sunday";
+      break;
+    case 8:
+      day = "Monday";
+      break;
+    default:
+      "NoData";
+  }
 
   return (
     <div>
@@ -77,7 +94,7 @@ function MainContainer({ data }) {
         <div className="days">
           <h3 className="dayOfWeek">Today</h3>
           <h3 className="dayOfWeek">Tomorrow</h3>
-          <h3 className="dayOfWeek">Sunday</h3>
+          <h3 className="dayOfWeek">{day}</h3>
         </div>
         <div>
           <HoursForecast />
