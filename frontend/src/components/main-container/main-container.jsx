@@ -36,7 +36,7 @@ function MainContainer({ data }) {
   return (
     <div>
       <div className="weatherMain">
-        <p className="myCity">Hamburg</p>
+        <p className="myCity">{data.city}</p>
         <p className="myDate">
           26 October, <span className="weekDay">Wednesday</span>
         </p>
