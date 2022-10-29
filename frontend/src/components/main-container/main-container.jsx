@@ -79,7 +79,9 @@ function MainContainer({ data }) {
         <div className="datas">
           <div className="wind">
             <h3>WIND</h3>
-            <p className="incorporated-data">{Math.round(data.wind.speed)} m/s</p>
+            <p className="incorporated-data">
+              {Math.round(data.wind.speed)} m/s
+            </p>
           </div>
           <div className="separator" />
           <div className="humidity">
