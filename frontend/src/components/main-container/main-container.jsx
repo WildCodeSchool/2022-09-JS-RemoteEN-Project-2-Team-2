@@ -48,14 +48,23 @@ function MainContainer({ data }) {
       break;
     default:
       day = "NoData";
-  }
+  };
+
+  let dateDay = new Date().toLocaleDateString("en-us", {
+    weekday: "long",
+  });
+  let dateNumeric = new Date().toLocaleDateString("en-us", {
+    month: "short",
+    day: "numeric",
+  });
 
   return (
     <div>
       <div className="weatherMain">
         <p className="myCity">{data.city}</p>
         <p className="myDate">
-          26 October, <span className="weekDay">Wednesday</span>
+          {dateNumeric}
+          <span className="weekDay">, {dateDay}</span>
         </p>
       </div>
       <div className="weatherMain">
