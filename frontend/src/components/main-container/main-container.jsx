@@ -123,7 +123,7 @@ function MainContainer({ data }) {
           <div className="separator" />
           <div>
             <h3>FEELS LIKE</h3>
-            <p className="incorporated-data">14°</p>
+            <p className="incorporated-data">{data.main.feels_like}</p> 
           </div>
         </div>
         <div className="sun-position">
