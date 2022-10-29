@@ -79,12 +79,12 @@ function MainContainer({ data }) {
         <div className="datas">
           <div className="wind">
             <h3>WIND</h3>
-            <p className="incorporated-data">26 km/h</p>
+            <p className="incorporated-data">{Math.round(data.wind.speed)} m/s</p>
           </div>
           <div className="separator" />
           <div className="humidity">
             <h3>HUMIDITY</h3>
-            <p className="incorporated-data">30%</p>
+            <p className="incorporated-data">{data.main.humidity}%</p>
           </div>
           <div className="separator" />
           <div>
@@ -96,13 +96,13 @@ function MainContainer({ data }) {
           <div className="sunrise">
             <h3>Sunrise</h3>
             <div className="border-Sunrise">
-              <p className="sunrise-time">7:53</p>
+              <p className="sunrise-time">{data.sys.sunrise}</p>
             </div>
           </div>
           <div className="sunset">
             <h3>Sunset</h3>
             <div className="border-Sunset">
-              <p className="sunset-time">18:15</p>
+              <p className="sunset-time">{data.sys.sunset}</p>
             </div>
           </div>
         </div>
