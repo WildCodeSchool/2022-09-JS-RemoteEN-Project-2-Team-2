@@ -47,7 +47,7 @@ function MainContainer({ data }) {
       day = "Monday";
       break;
     default:
-      "NoData";
+      day = "NoData";
   }
 
   return (
