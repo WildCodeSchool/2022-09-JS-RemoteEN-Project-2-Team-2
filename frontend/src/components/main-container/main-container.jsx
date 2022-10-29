@@ -58,6 +58,25 @@ function MainContainer({ data }) {
     day: "numeric",
   });
 
+  const dateUNIXrise = (data.sys.sunrise + data.timezone - 7200) * 1000;
+  const sunriseUNIX = new Date(dateUNIXrise);
+  const sunrise = sunriseUNIX.toLocaleDateString("en-us", {
+    hour: "numeric",
+    minute: "numeric",
+  });
+  const sunriseArray = sunrise.split("");
+  const finalSunriseTime = sunriseArray.slice(11).join("");
+
+  const dateUNIXset = (data.sys.sunset + data.timezone - 7200) * 1000;
+  const sunsetUNIX = new Date(dateUNIXset);
+  const sunset = sunsetUNIX.toLocaleDateString("en-us", {
+    hour: "numeric",
+    minute: "numeric",
+  });
+
+  const sunsetArray = sunset.split("");
+  const finalSunsetTime = sunsetArray.slice(11).join("");
+
   return (
     <div>
       <div className="weatherMain">
@@ -132,13 +151,13 @@ function MainContainer({ data }) {
           <div className="sunrise">
             <h3>Sunrise</h3>
             <div className="border-Sunrise">
-              <p className="sunrise-time">{data.sys.sunrise}</p>
+              <p className="sunrise-time">{finalSunriseTime}</p>
             </div>
           </div>
           <div className="sunset">
             <h3>Sunset</h3>
             <div className="border-Sunset">
-              <p className="sunset-time">{data.sys.sunset}</p>
+              <p className="sunset-time">{finalSunsetTime}</p>
             </div>
           </div>
         </div>
