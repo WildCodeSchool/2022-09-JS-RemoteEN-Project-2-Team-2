@@ -48,12 +48,12 @@ function MainContainer({ data }) {
       break;
     default:
       day = "NoData";
-  };
+  }
 
-  let dateDay = new Date().toLocaleDateString("en-us", {
+  const dateDay = new Date().toLocaleDateString("en-us", {
     weekday: "long",
   });
-  let dateNumeric = new Date().toLocaleDateString("en-us", {
+  const dateNumeric = new Date().toLocaleDateString("en-us", {
     month: "short",
     day: "numeric",
   });
