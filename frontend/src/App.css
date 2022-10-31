@@ -35,6 +35,7 @@ body {
 
 .sunnyLogo {
   width: 5rem;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 1024px) {
