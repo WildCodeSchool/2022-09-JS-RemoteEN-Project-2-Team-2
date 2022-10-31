@@ -58,7 +58,7 @@ function MainContainer({ data }) {
     day: "numeric",
   });
 
-  const dateUNIXrise = (data.sys.sunrise + data.timezone - 7200) * 1000;
+  const dateUNIXrise = (data.sys.sunrise + data.timezone - 3600) * 1000;
   const sunriseUNIX = new Date(dateUNIXrise);
   const sunrise = sunriseUNIX.toLocaleDateString("en-us", {
     hour: "numeric",
@@ -67,7 +67,7 @@ function MainContainer({ data }) {
   const sunriseArray = sunrise.split("");
   const finalSunriseTime = sunriseArray.slice(11).join("");
 
-  const dateUNIXset = (data.sys.sunset + data.timezone - 7200) * 1000;
+  const dateUNIXset = (data.sys.sunset + data.timezone - 3600) * 1000;
   const sunsetUNIX = new Date(dateUNIXset);
   const sunset = sunsetUNIX.toLocaleDateString("en-us", {
     hour: "numeric",
