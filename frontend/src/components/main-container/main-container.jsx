@@ -47,7 +47,7 @@ function MainContainer({ data }) {
       day = "Monday";
       break;
     default:
-      day = "NoData";
+      day = "WrongData";
   }
 
   const dateDay = new Date().toLocaleDateString("en-us", {
