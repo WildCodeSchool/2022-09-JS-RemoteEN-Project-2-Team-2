@@ -96,7 +96,8 @@ function MainContainer({ data }) {
               ? clearSkyD
               : data.weather[0].description === "few clouds"
               ? fewCloudsD
-              : data.weather[0].description === "mist"
+              : data.weather[0].description === "mist" ||
+                data.weather[0].description === "fog"
               ? mistD
               : data.weather[0].description === "rain" ||
                 data.weather[0].description === "light rain" ||
