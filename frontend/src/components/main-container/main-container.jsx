@@ -21,35 +21,6 @@ import thunderstormD from "../../assets/icons/thunderstormD.svg";
 import thunderstormN from "../../assets/icons/thunderstormN.svg";
 
 function MainContainer({ data }) {
-  const dayOfWeekDigit = new Date().getDay();
-  let day = dayOfWeekDigit + 2;
-
-  switch (day) {
-    case 2:
-      day = "Tuesday";
-      break;
-    case 3:
-      day = "Wednesday";
-      break;
-    case 4:
-      day = "Thursday";
-      break;
-    case 5:
-      day = "Friday";
-      break;
-    case 6:
-      day = "Saturday";
-      break;
-    case 7:
-      day = "Sunday";
-      break;
-    case 8:
-      day = "Monday";
-      break;
-    default:
-      day = "WrongData";
-  }
-
   const dateDay = new Date().toLocaleDateString("en-us", {
     weekday: "long",
   });
@@ -120,25 +91,17 @@ function MainContainer({ data }) {
         <p className="myWeather">{data.weather[0].main}</p>
       </div>
       <div className="main-container">
-        <div className="days">
-          <h3 className="dayOfWeek">Today</h3>
-          <h3 className="dayOfWeek">Tomorrow</h3>
-          <h3 className="dayOfWeek">{day}</h3>
-        </div>
-        <div>
-          <HoursForecast />
-        </div>
         <div className="datas">
+          <div className="humidity">
+            <h3>HUMIDITY</h3>
+            <p className="incorporated-data">{data.main.humidity}%</p>
+          </div>
+          <div className="separator" />
           <div className="wind">
             <h3>WIND</h3>
             <p className="incorporated-data">
               {Math.round(data.wind.speed)} m/s
             </p>
-          </div>
-          <div className="separator" />
-          <div className="humidity">
-            <h3>HUMIDITY</h3>
-            <p className="incorporated-data">{data.main.humidity}%</p>
           </div>
           <div className="separator" />
           <div>

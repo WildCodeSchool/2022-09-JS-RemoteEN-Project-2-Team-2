@@ -28,7 +28,8 @@
 .main-container {
   background-color: white;
   border-radius: 20px 20px 0 0;
-  padding-bottom: 28px;
+  padding-bottom: 27px;
+  padding-top: 5px;
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 50px;
@@ -52,7 +53,6 @@
   margin: 0;
   font-weight: bold;
   text-align: center;
-  text-transform: lowercase;
   color: #000000;
 }
 
@@ -119,32 +119,7 @@
   transform: rotate(90deg);
 }
 
-.days {
-  display: flex;
-  justify-content: space-between;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 32px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 17px;
-  padding-bottom: 15px;
-  text-align: center;
-  text-transform: uppercase;
 
-  color: #515253;
-}
-
-.dayOfWeek.dayOfWeek:active {
-  --color: #1d272c;
-  --position: center bottom;
-  --width: 20px;
-  --height: 1px;
-  background: linear-gradient(var(--color), var(--color)) var(--position) /
-    var(--width) var(--height) no-repeat;
-}
 
 .incorporated-data {
   margin-top: -9px;

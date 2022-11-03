@@ -6,6 +6,7 @@ import SubscribeBtn from "./components/subscribe/SubscribeBtn";
 import "./App.css";
 import logo from "./assets/logo/suni_logo.png";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "./api";
+import HoursForecast from "./components/HoursForecast/HoursForecast";
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
@@ -37,6 +38,7 @@ function App() {
     <div>
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <MainContainer data={currentWeather} />}
+      <HoursForecast />
       <SavedLocations />
       <SubscribeBtn />
       <div className="weatherMain">
