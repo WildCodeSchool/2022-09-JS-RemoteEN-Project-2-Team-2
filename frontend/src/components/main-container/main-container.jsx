@@ -54,7 +54,7 @@ function MainContainer({ data }) {
     weekday: "long",
   });
   const dateNumeric = new Date().toLocaleDateString("en-us", {
-    month: "short",
+    month: "long",
     day: "numeric",
   });
 
