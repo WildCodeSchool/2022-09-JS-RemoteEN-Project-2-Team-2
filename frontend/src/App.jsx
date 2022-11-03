@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { useState } from "react";
 import Search from "./components/search/search";
 import MainContainer from "./components/main-container/main-container";
 import SavedLocations from "./components/SavedLocations/SavedLocations";
