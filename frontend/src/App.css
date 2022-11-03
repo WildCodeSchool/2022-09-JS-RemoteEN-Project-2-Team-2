@@ -41,4 +41,41 @@ body {
 @media (min-width: 1024px) {
 }
 
+@media screen and (min-width : 1024px) {
+  
+  .sunnyLogo{
+    position: absolute;
+    top : 0;
+  }
 
+  .containerSearch{
+    margin: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+
+  .css-1s2u09g-control{
+    width: 250px;
+    margin-top: 20px;
+  }
+
+
+  .days{
+
+  }
+
+  .css-b62m3t-container{
+    width: 250px;
+  }
+
+  .flexboxWeather{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .dayOfWeek:first-child{
+    margin-right:70%;
+  }
+}

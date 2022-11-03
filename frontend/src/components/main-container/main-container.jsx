@@ -50,7 +50,9 @@ function MainContainer({ data }) {
 
   return (
     <div>
+      <div className = "flexboxWeather"> 
       <div className="weatherMain">
+        <div className = "weathetemp-status"> 
         <p className="myCity">{data.city}</p>
         <p className="myDate">
           {dateNumeric}
@@ -90,6 +92,7 @@ function MainContainer({ data }) {
         <p className="myCityTem">{Math.round(data.main.temp)}°C</p>
         <p className="myWeather">{data.weather[0].main}</p>
       </div>
+      </div>
       <div className="main-container">
         <div className="datas">
           <div className="humidity">
@@ -125,6 +128,7 @@ function MainContainer({ data }) {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
