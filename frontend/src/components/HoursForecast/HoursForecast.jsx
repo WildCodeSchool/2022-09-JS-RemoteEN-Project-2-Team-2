@@ -34,7 +34,7 @@ function HoursForecast() {
       day = "WrongData";
   }
   return (
-    <div>
+    <div className="forecastContainer">
       <div className="days">
         <h3 className="dayOfWeek">Today</h3>
         <h3 className="dayOfWeek">Tomorrow</h3>
