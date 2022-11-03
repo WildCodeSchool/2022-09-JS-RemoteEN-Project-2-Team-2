@@ -35,7 +35,7 @@ function App() {
   console.warn(currentWeather);
   console.warn(forecast);
   return (
-    <div className= "appContainerDesktop">
+    <div className="appContainerDesktop">
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <MainContainer data={currentWeather} />}
       <HoursForecast />
