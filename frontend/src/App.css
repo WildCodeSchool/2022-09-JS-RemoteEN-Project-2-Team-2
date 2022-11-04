@@ -116,4 +116,8 @@ margin-left: 82px;
     width: 123px;
     height: 70px;
   }
+
+  .hour{
+    font-size: 18px;
+  }
 }
