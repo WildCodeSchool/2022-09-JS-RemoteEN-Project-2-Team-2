@@ -52,14 +52,13 @@ function MainContainer({ data }) {
     <div>
       <div className="flexboxWeather">
         <div className="weatherMain">
-          <div className="weathetemp-status">
-            <p className="myCity">{data.city}</p>
-            <p className="myDate">
-              {dateNumeric}
-              <span className="weekDay">, {dateDay}</span>
-            </p>
-          </div>
-          <div className="weatherMain">
+          <p className="myCity">{data.city}</p>
+          <p className="myDate">
+            {dateNumeric}
+            <span className="weekDay">, {dateDay}</span>
+          </p>
+
+          <div className="weatherMainFlex">
             <img
               className="imgWeather"
               src={
@@ -89,8 +88,11 @@ function MainContainer({ data }) {
               }
               alt="Sunny"
             />
-            <p className="myCityTem"> {Math.round(data.main.temp)}°C</p>
-            <p className="myWeather">{data.weather[0].main}</p>
+
+            <div className="datasMain">
+              <p className="myCityTem"> {Math.round(data.main.temp)}°C</p>
+              <p className="myWeather">{data.weather[0].main}</p>
+            </div>
           </div>
         </div>
         <div className="main-container">

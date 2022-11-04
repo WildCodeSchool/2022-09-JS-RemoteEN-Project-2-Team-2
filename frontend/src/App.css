@@ -45,8 +45,9 @@ body {
   .sunnyLogo{
   top: 0;
     position: absolute;
-    margin-top: 50px;
+    margin-top: 54px;
     width: 123px;
+    margin-left: 52px;
 }
 
   .containerSearch{
@@ -66,14 +67,15 @@ body {
 
   .css-b62m3t-container{
     width: 250px;
-    margin-top: 40px;
+    margin-top: 54px;
   }
 
   .flexboxWeather{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: -60px;
+    margin-top: 54px;
+    margin-bottom: 50px;
   }
 
   .myWeather{
@@ -118,12 +120,15 @@ flex: 2;
     font-size: 16px;
   }
 
-  .weatherMain{
-    display: flex;
-    align-items: flex-start;
-    margin-left: 82px;
-  }
 
+  .weatherMainFlex{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+  }
+.weathetemp-status{
+  display: flex;
+}
   .forecastContainer{
 margin-right: 82px;
 margin-left: 82px;
@@ -147,6 +152,10 @@ margin-left: 82px;
     background-size: 57%;
   }
 
+  .imgWeather{
+    height:43vh;
+  }
+
   .subscribe-container-flex {
     display: flex;
     align-items: center;
@@ -158,12 +167,17 @@ margin-left: 82px;
       margin-right: 84px;
 }
 
-.myFooter {
-  width: 76vw;
-  display: flex;
-}
+
 
 .hour-weather{
   margin-bottom: 5%;
+}
+
+.weatherMain{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 101px;
+    
 }
 }
