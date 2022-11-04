@@ -11,13 +11,13 @@ body {
 
 
 .myCity {
-  font-size: 2rem;
+  font-size: 24px;
   font-weight: 500;
   margin-bottom: 0;
 }
 
 .myDate {
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: 300;
   margin-top: 5px;
 }
@@ -43,10 +43,10 @@ body {
 
 @media screen and (min-width : 1024px) {
   
-  .sunnyLogo{
+  /*.sunnyLogo{
     position: absolute;
     top : 0;
-  }
+  }*/
 
   .containerSearch{
     margin: 0;
@@ -55,9 +55,13 @@ body {
     flex-direction: row-reverse;
   }
 
+  .css-b62m3t-container{
+    margin-right: 82px;
+  }
+
   .css-1s2u09g-control{
     width: 250px;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
   .css-b62m3t-container{
@@ -68,9 +72,47 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: -60px;
   }
 
   .dayOfWeek:first-child{
     margin-right:70%;
+  }
+
+  #root > div > div > div > div{
+flex: 2;
+  }
+
+  .main-container{
+    background-color: transparent;
+  }
+
+  .myCity{
+    text-align: left;
+    font-size: 40px;
+  }
+
+  .myDate{
+    font-size: 16px;
+  }
+
+  .weatherMain{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 82px;
+  }
+
+  .forecastContainer{
+margin-right: 82px;
+margin-left: 82px;
+  }
+
+  .savedlocations-box{
+    margin-right: 82px;
+margin-left: 82px;
+  }
+
+  .img-hours{
+    width: 123px;
   }
 }
