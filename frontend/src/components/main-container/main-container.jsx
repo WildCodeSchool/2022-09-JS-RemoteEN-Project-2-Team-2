@@ -89,7 +89,7 @@ function MainContainer({ data }) {
               }
               alt="Sunny"
             />
-            <p className="myCityTem">{Math.round(data.main.temp)}°C</p>
+            <p className="myCityTem"> {Math.round(data.main.temp)}°</p>
             <p className="myWeather">{data.weather[0].main}</p>
           </div>
         </div>

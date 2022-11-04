@@ -11,10 +11,19 @@ function SavedLocations() {
     backgroundSize: "50% auto",
     borderRadius: "20px 20px 0px 0px",
   };
+
+  const backgroundDesktop = {
+    backgroundImage: `url(${Rectangle})`,
+    backgroundRepeat: "repeat-y",
+    backgroundSize: "57% auto",
+    borderRadius: "20px 20px 0px 0px",
+  };
   return (
     <div>
       <div className="savedlocations-box">
-        <div style={background}>
+        <div
+          style={window.screen.width > 1024 ? backgroundDesktop : background}
+        >
           <div className="button-flexbox">
             <button className="adding-saved-locations" type="button">
               <img className="img-button" src={button} alt="" />

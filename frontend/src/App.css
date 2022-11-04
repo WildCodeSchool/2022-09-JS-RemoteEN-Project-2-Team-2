@@ -38,15 +38,15 @@ body {
   margin-bottom: 50px;
 }
 
-@media (min-width: 1024px) {
-}
 
 @media screen and (min-width : 1024px) {
   
-  /*.sunnyLogo{
+  .sunnyLogo{
+  top: 0;
     position: absolute;
-    top : 0;
-  }*/
+    margin-top: 50px;
+    width: 123px;
+}
 
   .containerSearch{
     margin: 0;
@@ -61,11 +61,11 @@ body {
 
   .css-1s2u09g-control{
     width: 250px;
-    margin-top: 40px;
   }
 
   .css-b62m3t-container{
     width: 250px;
+    margin-top: 40px;
   }
 
   .flexboxWeather{
@@ -75,8 +75,29 @@ body {
     margin-top: -60px;
   }
 
+  .myWeather{
+  align-self: center;
+  font-size: 30px; 
+  }
+  .myCityTem{
+    align-self: center;
+  font-size: 45px; 
+
+  }
+  .dayOfWeek{
+    padding-right: 20px;
+    padding-left: 20px; 
+  }
+
+  .right{
+    padding-right: 10%;
+    gap: 30px;
+  }
+  .saved-icon{
+    width: 84px;
+  }
   .dayOfWeek:first-child{
-    margin-right:70%;
+    margin-right:60%;
   }
 
   #root > div > div > div > div{
@@ -105,6 +126,7 @@ flex: 2;
   .forecastContainer{
 margin-right: 82px;
 margin-left: 82px;
+border-radius: 23px 20px 0px 0px;
   }
 
   .savedlocations-box{
@@ -114,10 +136,33 @@ margin-left: 82px;
 
   .img-hours{
     width: 123px;
-    height: 70px;
+    height: 100px;
   }
 
   .hour{
-    font-size: 18px;
+    font-size: 16px;
   }
+  .background{
+    background-size: 57%;
+  }
+
+  .subscribe-container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.subButton{
+  width: 320px;
+      margin-right: 84px;
+}
+
+.myFooter {
+  width: 76vw;
+  display: flex;
+}
+
+.hour-weather{
+  margin-bottom: 5%;
+}
 }
