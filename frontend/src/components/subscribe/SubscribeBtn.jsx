@@ -1,10 +1,12 @@
 import React from "react";
 import "./SubscribeBtn.css";
 
-function SubscribeBtn() {
+function SubscribeBtn({state}) {
   return (
+    
     <div className="subscribe-container-flex">
-      <button className="subButtonDark" type="button">
+      
+      <button className={state == true ? "subButtonDark" : "subButton"} type="button">
         Subscribe now
       </button>
     </div>

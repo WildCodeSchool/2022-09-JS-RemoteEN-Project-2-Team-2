@@ -42,13 +42,13 @@ function App() {
   };
 
   return (
-    <div className="appContainerDesktopDark">
+    <div className={toggled ? "appContainerDesktopDark" : "appContainerDesktop"}>
       <Search onSearchChange={handleOnSearchChange} />
       <Toggle toggled={toggled} onClick={handleClick} />
       {currentWeather && <MainContainer data={currentWeather} />}
-      <HoursForecast />
-      <SavedLocations />
-      <SubscribeBtn />
+      <HoursForecast state={toggled} />
+      <SavedLocations state={toggled} />
+      <SubscribeBtn state={toggled} />
       <div className="weatherMain">
         <div className="myFooter">
           <img className="sunnyLogo" src={logoWhite} alt="" />
