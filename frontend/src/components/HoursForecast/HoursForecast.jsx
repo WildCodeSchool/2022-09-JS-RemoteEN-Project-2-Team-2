@@ -77,28 +77,78 @@ function HoursForecast() {
           {day}
         </button>
       </div>
-      <div className="hours-box">
-        <div className="hour-weather">
-          <p className="hour">00:00</p>
-          <img className="img-hours" src={nightCloudy} alt="" />
-          <p className="temperature">10°</p>
+      {today ? (
+        <div className="hours-box">
+          <div className="hour-weather">
+            <p className="hour">00:00</p>
+            <img className="img-hours" src={nightCloudy} alt="" />
+            <p className="temperature">10°</p>
+          </div>
+          <div className="hour-weather">
+            <p className="hour">06:00</p>
+            <img className="img-hours" src={cloudy} alt="" />
+            <p className="temperature">12°</p>
+          </div>
+          <div className="hour-weather">
+            <p className="hour">12:00</p>
+            <img className="img-hours" src={clear} alt="" />
+            <p className="temperature">13°</p>
+          </div>
+          <div className="hour-weather">
+            <p className="hour">18:00</p>
+            <img className="img-hours" src={clear} alt="" />
+            <p className="temperature">17°</p>
+          </div>
         </div>
-        <div className="hour-weather">
-          <p className="hour">06:00</p>
-          <img className="img-hours" src={cloudy} alt="" />
-          <p className="temperature">12°</p>
+      ) : null}
+      {tomorrow ? (
+        <div className="hours-box">
+          <div className="hour-weather">
+            <p className="hour">00:00</p>
+            <img className="img-hours" src={nightCloudy} alt="" />
+            <p className="temperature">10°</p>
+          </div>
+          <div className="hour-weather">
+            <p className="hour">06:00</p>
+            <img className="img-hours" src={cloudy} alt="" />
+            <p className="temperature">12°</p>
+          </div>
+          <div className="hour-weather">
+            <p className="hour">12:00</p>
+            <img className="img-hours" src={clear} alt="" />
+            <p className="temperature">13°</p>
+          </div>
+          <div className="hour-weather">
+            <p className="hour">18:00</p>
+            <img className="img-hours" src={clear} alt="" />
+            <p className="temperature">17°</p>
+          </div>
         </div>
-        <div className="hour-weather">
-          <p className="hour">12:00</p>
-          <img className="img-hours" src={clear} alt="" />
-          <p className="temperature">13°</p>
+      ) : null}
+      {dayAfter ? (
+        <div className="hours-box">
+          <div className="hour-weather">
+            <p className="hour">00:00</p>
+            <img className="img-hours" src={nightCloudy} alt="" />
+            <p className="temperature">10°</p>
+          </div>
+          <div className="hour-weather">
+            <p className="hour">06:00</p>
+            <img className="img-hours" src={cloudy} alt="" />
+            <p className="temperature">12°</p>
+          </div>
+          <div className="hour-weather">
+            <p className="hour">12:00</p>
+            <img className="img-hours" src={clear} alt="" />
+            <p className="temperature">13°</p>
+          </div>
+          <div className="hour-weather">
+            <p className="hour">18:00</p>
+            <img className="img-hours" src={clear} alt="" />
+            <p className="temperature">17°</p>
+          </div>
         </div>
-        <div className="hour-weather">
-          <p className="hour">18:00</p>
-          <img className="img-hours" src={clear} alt="" />
-          <p className="temperature">17°</p>
-        </div>
-      </div>
+      ) : null}
     </div>
   );
 }
