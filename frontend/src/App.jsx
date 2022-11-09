@@ -46,7 +46,7 @@ function App() {
       <Search onSearchChange={handleOnSearchChange} />
       <Toggle toggled={toggled} onClick={handleClick} />
       {currentWeather && <MainContainer data={currentWeather} />}
-      <HoursForecast />
+      {forecast && <HoursForecast data={forecast} />}
       <SavedLocations />
       <SubscribeBtn />
       <div className="weatherMain">
