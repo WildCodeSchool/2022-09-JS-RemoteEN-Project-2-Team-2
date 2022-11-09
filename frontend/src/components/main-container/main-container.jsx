@@ -50,78 +50,84 @@ function MainContainer({ data }) {
 
   return (
     <div>
-      <div className="weatherMain">
-        <p className="myCity">{data.city}</p>
-        <p className="myDate">
-          {dateNumeric}
-          <span className="weekDay">, {dateDay}</span>
-        </p>
-      </div>
-      <div className="weatherMain">
-        <img
-          className="imgWeather"
-          src={
-            data.weather[0].description === "broken clouds"
-              ? brokenCloudsD
-              : data.weather[0].description === "clear sky"
-              ? clearSkyD
-              : data.weather[0].description === "few clouds"
-              ? fewCloudsD
-              : data.weather[0].description === "mist" ||
-                data.weather[0].description === "fog"
-              ? mistD
-              : data.weather[0].description === "rain" ||
-                data.weather[0].description === "light rain" ||
-                data.weather[0].description === "moderate rain"
-              ? rainD
-              : data.weather[0].description === "scattered clouds" ||
-                data.weather[0].description === "overcast clouds"
-              ? scatteredCloudsD
-              : data.weather[0].description === "shower rain"
-              ? showerRainD
-              : data.weather[0].description === "snow"
-              ? snowD
-              : data.weather[0].description === "thunder"
-              ? thunderstormD
-              : rainN
-          }
-          alt="Sunny"
-        />
-        <p className="myCityTem">{Math.round(data.main.temp)}°C</p>
-        <p className="myWeather">{data.weather[0].main}</p>
-      </div>
-      <div className="main-container">
-        <div className="datas">
-          <div className="humidity">
-            <h3>HUMIDITY</h3>
-            <p className="incorporated-data">{data.main.humidity}%</p>
-          </div>
-          <div className="separator" />
-          <div className="wind">
-            <h3>WIND</h3>
-            <p className="incorporated-data">
-              {Math.round(data.wind.speed)} m/s
-            </p>
-          </div>
-          <div className="separator" />
-          <div>
-            <h3>FEELS LIKE</h3>
-            <p className="incorporated-data">
-              {Math.round(data.main.feels_like)}°C
-            </p>
-          </div>
-        </div>
-        <div className="sun-position">
-          <div className="sunrise">
-            <h3>Sunrise</h3>
-            <div className="border-Sunrise">
-              <p className="sunrise-time">{finalSunriseTime}</p>
+      <div className="flexboxWeather">
+        <div className="weatherMain">
+          <p className="myCity">{data.city}</p>
+          <p className="myDate">
+            {dateNumeric}
+            <span className="weekDay">, {dateDay}</span>
+          </p>
+
+          <div className="weatherMainFlex">
+            <img
+              className="imgWeather"
+              src={
+                data.weather[0].description === "broken clouds"
+                  ? brokenCloudsD
+                  : data.weather[0].description === "clear sky"
+                  ? clearSkyD
+                  : data.weather[0].description === "few clouds"
+                  ? fewCloudsD
+                  : data.weather[0].description === "mist" ||
+                    data.weather[0].description === "fog"
+                  ? mistD
+                  : data.weather[0].description === "rain" ||
+                    data.weather[0].description === "light rain" ||
+                    data.weather[0].description === "moderate rain"
+                  ? rainD
+                  : data.weather[0].description === "scattered clouds" ||
+                    data.weather[0].description === "overcast clouds"
+                  ? scatteredCloudsD
+                  : data.weather[0].description === "shower rain"
+                  ? showerRainD
+                  : data.weather[0].description === "snow"
+                  ? snowD
+                  : data.weather[0].description === "thunder"
+                  ? thunderstormD
+                  : rainN
+              }
+              alt="Sunny"
+            />
+
+            <div className="datasMain">
+              <p className="myCityTem"> {Math.round(data.main.temp)}°C</p>
+              <p className="myWeather">{data.weather[0].main}</p>
             </div>
           </div>
-          <div className="sunset">
-            <h3>Sunset</h3>
-            <div className="border-Sunset">
-              <p className="sunset-time">{finalSunsetTime}</p>
+        </div>
+        <div className="main-container">
+          <div className="datas">
+            <div className="humidity">
+              <h3>HUMIDITY</h3>
+              <p className="incorporated-data">{data.main.humidity}%</p>
+            </div>
+            <div className="separator" />
+            <div className="wind">
+              <h3>WIND</h3>
+              <p className="incorporated-data">
+                {Math.round(data.wind.speed)} m/s
+              </p>
+            </div>
+            <div className="separator" />
+            <div>
+              <h3>FEELS LIKE</h3>
+              <p className="incorporated-data">
+                {Math.round(data.main.feels_like)}°C
+              </p>
+            </div>
+          </div>
+          <div className="sun-position">
+            <div className="sunrise">
+              <h3>Sunrise</h3>
+              <div className="border-Sunrise">
+                <p className="sunrise-time">{finalSunriseTime}</p>
+              </div>
+            </div>
+            <div className="sunset">
+              <h3>Sunset</h3>
+              <div className="border-Sunset">
+                <p className="sunset-time">{finalSunsetTime}</p>
+              </div>
             </div>
           </div>
         </div>

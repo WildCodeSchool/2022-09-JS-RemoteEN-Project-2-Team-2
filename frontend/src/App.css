@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -11,13 +11,14 @@ body {
 
 
 .myCity {
-  font-size: 2rem;
+  font-size: 24px;
   font-weight: 500;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .myDate {
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: 300;
   margin-top: 5px;
 }
@@ -38,7 +39,147 @@ body {
   margin-bottom: 50px;
 }
 
-@media (min-width: 1024px) {
+
+@media screen and (min-width : 1024px) {
+  
+  .sunnyLogo{
+  top: 0;
+    position: absolute;
+    margin-top: 54px;
+    width: 123px;
+    margin-left: 52px;
+}
+
+  .containerSearch{
+    margin: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+
+  .css-b62m3t-container{
+    margin-right: 82px;
+  }
+
+  .css-1s2u09g-control{
+    width: 250px;
+  }
+
+  .css-b62m3t-container{
+    width: 250px;
+    margin-top: 54px;
+  }
+
+  .flexboxWeather{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 54px;
+    margin-bottom: 50px;
+  }
+
+  .myWeather{
+  align-self: center;
+  font-size: 30px; 
+  }
+  .myCityTem{
+    align-self: center;
+  font-size: 45px; 
+
+  }
+  .dayOfWeek{
+    padding-right: 20px;
+    padding-left: 20px; 
+  }
+
+  .right{
+    padding-right: 10%;
+    gap: 30px;
+  }
+  .saved-icon{
+    width: 84px;
+  }
+  .dayOfWeek:first-child{
+    margin-right:60%;
+  }
+
+  #root > div > div > div > div{
+flex: 2;
+  }
+
+  .main-container{
+    background-color: transparent;
+  }
+
+  .myCity{
+    text-align: left;
+    font-size: 40px;
+    margin-top: 0;
+}
+  
+
+  .myDate{
+    font-size: 16px;
+  }
+
+
+  .weatherMainFlex{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+  }
+.weathetemp-status{
+  display: flex;
+}
+  .forecastContainer{
+margin-right: 82px;
+margin-left: 82px;
+border-radius: 23px 20px 0px 0px;
+  }
+
+  .savedlocations-box{
+    margin-right: 82px;
+margin-left: 82px;
+  }
+
+  .img-hours{
+    width: 123px;
+    height: 100px;
+  }
+
+  .hour{
+    font-size: 16px;
+  }
+  .background{
+    background-size: 57%;
+  }
+
+  .imgWeather{
+    height:43vh;
+  }
+
+  .subscribe-container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.subButton{
+  width: 320px;
+      margin-right: 84px;
 }
 
 
+
+.hour-weather{
+  margin-bottom: 5%;
+}
+
+.weatherMain{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 101px;
+    
+}
+}

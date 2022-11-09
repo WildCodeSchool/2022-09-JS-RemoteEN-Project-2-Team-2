@@ -1,18 +1,24 @@
 .imgWeather {
-  width: 90%; 
+  width: 400px;; 
   height: 30vh;
 }
 
 .myCityTem {
-  font-size: 5rem;
-  font-weight: 700;
+  font-size: 64px;
+  font-weight: 600;
   margin: 0;
+  text-align: center;
+}
+
+.myCity{
+  margin-top: 20px;
 }
 
 .myWeather {
   font-size: 2rem;
   font-weight: 500;
   margin: 0;
+  text-align: center;
 }
 
 .weatherMain {
@@ -111,6 +117,8 @@
   margin-top: 20px;
   margin-bottom: 16px;
 }
+
+
 
 .separator {
   width: 50px;
