@@ -48,7 +48,9 @@ function App() {
     >
       <Search onSearchChange={handleOnSearchChange} />
       <Toggle toggled={toggled} onClick={handleClick} />
-      {currentWeather && <MainContainer data={currentWeather} />}
+      {currentWeather && (
+        <MainContainer darkThemeOn={toggled} data={currentWeather} />
+      )}
       <HoursForecast darkThemeOn={toggled} />
       <SavedLocations darkThemeOn={toggled} />
       <SubscribeBtn darkThemeOn={toggled} />

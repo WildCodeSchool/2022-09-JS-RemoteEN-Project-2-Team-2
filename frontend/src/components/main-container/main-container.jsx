@@ -20,7 +20,7 @@ import snowN from "../../assets/icons/snowN.svg";
 import thunderstormD from "../../assets/icons/thunderstormD.svg";
 import thunderstormN from "../../assets/icons/thunderstormN.svg";
 
-function MainContainer({ data }) {
+function MainContainer({ data, darkThemeOn }) {
   const dateDay = new Date().toLocaleDateString("en-us", {
     weekday: "long",
   });
@@ -51,7 +51,9 @@ function MainContainer({ data }) {
   return (
     <div>
       <div className="flexboxWeather">
-        <div className="weatherMain">
+        <div
+          className={darkThemeOn === true ? "weatherMainDark" : "weatherMain"}
+        >
           <p className="myCity">{data.city}</p>
           <p className="myDate">
             {dateNumeric}
@@ -95,7 +97,11 @@ function MainContainer({ data }) {
             </div>
           </div>
         </div>
-        <div className="main-container">
+        <div
+          className={
+            darkThemeOn === true ? "main-containerDark" : "main-container"
+          }
+        >
           <div className="datas">
             <div className="humidity">
               <h3>HUMIDITY</h3>
