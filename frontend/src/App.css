@@ -5,9 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.appContainerDesktop{
   background: linear-gradient(180deg, #ffffff 0%, #d9d9d9 100%);
 }
 
+/* Dark Version */
+.appContainerDesktopDark{
+  background: linear-gradient(180deg, #373C46 0%, #040405 100%);
+}
 
 
 .myCity {

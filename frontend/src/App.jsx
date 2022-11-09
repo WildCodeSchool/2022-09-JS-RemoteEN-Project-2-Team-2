@@ -4,7 +4,7 @@ import MainContainer from "./components/main-container/main-container";
 import SavedLocations from "./components/SavedLocations/SavedLocations";
 import SubscribeBtn from "./components/subscribe/SubscribeBtn";
 import "./App.css";
-import logo from "./assets/logo/suni_logo.png";
+import logoWhite from "./assets/logo/suni_logo_white.png";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "./api";
 import HoursForecast from "./components/HoursForecast/HoursForecast";
 import Toggle from "./components/Toggle/Toggle";
@@ -42,7 +42,7 @@ function App() {
   };
 
   return (
-    <div className="appContainerDesktop">
+    <div className="appContainerDesktopDark">
       <Search onSearchChange={handleOnSearchChange} />
       <Toggle toggled={toggled} onClick={handleClick} />
       {currentWeather && <MainContainer data={currentWeather} />}
@@ -51,7 +51,7 @@ function App() {
       <SubscribeBtn />
       <div className="weatherMain">
         <div className="myFooter">
-          <img className="sunnyLogo" src={logo} alt="" />
+          <img className="sunnyLogo" src={logoWhite} alt="" />
         </div>
       </div>
     </div>

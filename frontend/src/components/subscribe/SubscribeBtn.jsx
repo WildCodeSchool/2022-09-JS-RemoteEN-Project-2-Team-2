@@ -4,7 +4,7 @@ import "./SubscribeBtn.css";
 function SubscribeBtn() {
   return (
     <div className="subscribe-container-flex">
-      <button className="subButton" type="button">
+      <button className="subButtonDark" type="button">
         Subscribe now
       </button>
     </div>
