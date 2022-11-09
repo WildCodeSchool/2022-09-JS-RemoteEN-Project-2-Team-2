@@ -23,9 +23,6 @@ body {
   margin-top: 5px;
 }
 
-.weekDay {
-  font-weight: 500;
-}
 
 .myFooter {
   display: flex;
@@ -41,7 +38,13 @@ body {
 
 
 @media screen and (min-width : 1024px) {
-  
+
+   h3{
+    font-size: 16px!important;
+  }
+  .incorporated-data{
+    font-size: 14px!important;
+  }
   .sunnyLogo{
   top: 0;
     position: absolute;
@@ -68,6 +71,7 @@ body {
   .css-b62m3t-container{
     width: 250px;
     margin-top: 54px;
+    margin-right : 200px;
   }
 
   .flexboxWeather{
@@ -131,15 +135,19 @@ flex: 2;
 .weathetemp-status{
   display: flex;
 }
-  .forecastContainer{
-margin-right: 82px;
+.forecastContainer{
+  margin-right: 92px;
 margin-left: 82px;
 border-radius: 23px 20px 0px 0px;
   }
 
   .savedlocations-box{
-    margin-right: 82px;
+    margin-right: 92px;
 margin-left: 82px;
+  }
+
+  .saved-components{
+    margin-right: 122px;
   }
 
   .img-hours{
@@ -156,6 +164,7 @@ margin-left: 82px;
 
   .imgWeather{
     height:43vh;
+    margin-right: 50px;
   }
 
   .subscribe-container-flex {
@@ -182,4 +191,26 @@ margin-left: 82px;
     margin-left: 101px;
     
 }
+
+.separator {
+  margin-right: 30px;
+  margin-left: 30px;
+  width: 50px;
+  height: 1px;
+  background: #515253;
+}
+
+.toggle{
+  margin-right: 92px;
+  }
+
+  .toggle-container {
+    position: absolute;
+    top: 55px!important;
+    right: 32px;
+    }
+  
+    .sun-position{
+      margin-top: 50px; 
+    }
 }
