@@ -4,6 +4,7 @@ import MainContainer from "./components/main-container/main-container";
 import SavedLocations from "./components/SavedLocations/SavedLocations";
 import SubscribeBtn from "./components/subscribe/SubscribeBtn";
 import "./App.css";
+import logo from "./assets/logo/suni_logo.png";
 import logoWhite from "./assets/logo/suni_logo_white.png";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "./api";
 import HoursForecast from "./components/HoursForecast/HoursForecast";
@@ -42,16 +43,22 @@ function App() {
   };
 
   return (
-    <div className={toggled ? "appContainerDesktopDark" : "appContainerDesktop"}>
+    <div
+      className={toggled ? "appContainerDesktopDark" : "appContainerDesktop"}
+    >
       <Search onSearchChange={handleOnSearchChange} />
       <Toggle toggled={toggled} onClick={handleClick} />
       {currentWeather && <MainContainer data={currentWeather} />}
-      <HoursForecast state={toggled} />
-      <SavedLocations state={toggled} />
-      <SubscribeBtn state={toggled} />
+      <HoursForecast darkThemeOn={toggled} />
+      <SavedLocations darkThemeOn={toggled} />
+      <SubscribeBtn darkThemeOn={toggled} />
       <div className="weatherMain">
         <div className="myFooter">
-          <img className="sunnyLogo" src={logoWhite} alt="" />
+          <img
+            className={toggled ? "sunnyLogoDark" : "sunnyLogo"}
+            src={toggled ? logoWhite : logo}
+            alt=""
+          />
         </div>
       </div>
     </div>

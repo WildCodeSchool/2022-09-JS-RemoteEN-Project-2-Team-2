@@ -4,7 +4,7 @@ import cloudy from "../../assets/cloudy.svg";
 import nightCloudy from "../../assets/night cloudy.svg";
 import clear from "../../assets/clear.svg";
 
-function HoursForecast() {
+function HoursForecast({ darkThemeOn }) {
   const dayOfWeekDigit = new Date().getDay();
   let day = dayOfWeekDigit + 2;
 
@@ -34,32 +34,52 @@ function HoursForecast() {
       day = "WrongData";
   }
   return (
-    <div className="forecastContainerDark">
-      <div className="daysDark">
+    <div
+      className={
+        darkThemeOn === true ? "forecastContainerDark" : "forecastContainer"
+      }
+    >
+      <div className={darkThemeOn === true ? "daysDark" : "days"}>
         <h3 className="dayOfWeek">Today</h3>
         <h3 className="dayOfWeek">Tomorrow</h3>
         <h3 className="dayOfWeek">{day}</h3>
       </div>
-      <div className="hours-boxDark">
+      <div className={darkThemeOn === true ? "hours-boxDark" : "hours-box"}>
         <div className="hour-weather">
-          <p className="hourDark">00:00</p>
+          <p className={darkThemeOn === true ? "hourDark" : "hour"}>00:00</p>
           <img className="img-hours" src={nightCloudy} alt="" />
-          <p className="temperatureDark">10°</p>
+          <p
+            className={darkThemeOn === true ? "temperatureDark" : "temperature"}
+          >
+            10°
+          </p>
         </div>
         <div className="hour-weather">
-          <p className="hourDark">06:00</p>
+          <p className={darkThemeOn === true ? "hourDark" : "hour"}>06:00</p>
           <img className="img-hours" src={cloudy} alt="" />
-          <p className="temperatureDark">12°</p>
+          <p
+            className={darkThemeOn === true ? "temperatureDark" : "temperature"}
+          >
+            12°
+          </p>
         </div>
         <div className="hour-weather">
-          <p className="hourDark">12:00</p>
+          <p className={darkThemeOn === true ? "hourDark" : "hour"}>12:00</p>
           <img className="img-hours" src={clear} alt="" />
-          <p className="temperatureDark">13°</p>
+          <p
+            className={darkThemeOn === true ? "temperatureDark" : "temperature"}
+          >
+            13°
+          </p>
         </div>
         <div className="hour-weather">
-          <p className="hourDark">18:00</p>
+          <p className={darkThemeOn === true ? "hourDark" : "hour"}>18:00</p>
           <img className="img-hours" src={clear} alt="" />
-          <p className="temperatureDark">17°</p>
+          <p
+            className={darkThemeOn === true ? "temperatureDark" : "temperature"}
+          >
+            17°
+          </p>
         </div>
       </div>
     </div>
