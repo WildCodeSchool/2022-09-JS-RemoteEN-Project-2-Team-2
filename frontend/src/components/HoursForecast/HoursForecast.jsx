@@ -106,19 +106,33 @@ function HoursForecast({ data }) {
   return (
     <div className="forecastContainer">
       <div className="days">
-        <button type="button" className="dayOfWeek" onClick={handleTodayChange}>
+        <button
+          type="button"
+          className={
+            today ? "dayOfWeek border-b-[1px] border-b-[#505152]" : "dayOfWeek "
+          }
+          onClick={handleTodayChange}
+        >
           Today
         </button>
         <button
           type="button"
-          className="dayOfWeek"
+          className={
+            tomorrow
+              ? "dayOfWeek border-b-[1px] border-b-[#505152]"
+              : "dayOfWeek "
+          }
           onClick={handleTomorrowChange}
         >
           Tomorrow
         </button>
         <button
           type="button"
-          className="dayOfWeek"
+          className={
+            dayAfter
+              ? "dayOfWeek border-b-[1px] border-b-[#505152]"
+              : "dayOfWeek "
+          }
           onClick={handleDayAfterChange}
         >
           {day}
