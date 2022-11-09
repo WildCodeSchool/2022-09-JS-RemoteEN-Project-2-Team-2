@@ -7,6 +7,7 @@ import "./App.css";
 import logo from "./assets/logo/suni_logo.png";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "./api";
 import HoursForecast from "./components/HoursForecast/HoursForecast";
+import Toggle from "./components/Toggle/Toggle";
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
@@ -34,9 +35,16 @@ function App() {
 
   console.warn(currentWeather);
   console.warn(forecast);
+
+  const [toggled, setToggled] = useState(false);
+  const handleClick = () => {
+    setToggled((s) => !s);
+  };
+
   return (
     <div className="appContainerDesktop">
       <Search onSearchChange={handleOnSearchChange} />
+      <Toggle toggled={toggled} onClick={handleClick} />
       {currentWeather && <MainContainer data={currentWeather} />}
       <HoursForecast />
       <SavedLocations />
