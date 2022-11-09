@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HoursForecast.css";
 import cloudy from "../../assets/cloudy.svg";
 import nightCloudy from "../../assets/night cloudy.svg";
@@ -33,12 +33,49 @@ function HoursForecast() {
     default:
       day = "WrongData";
   }
+
+  const [today, setToday] = useState(true);
+  const [tomorrow, setTomorrow] = useState(false);
+  const [dayAfter, setDayAfter] = useState(false);
+
+  const handleTodayChange = () => {
+    setToday(true);
+    setTomorrow(false);
+    setDayAfter(false);
+  };
+
+  const handleTomorrowChange = () => {
+    setToday(false);
+    setTomorrow(true);
+    setDayAfter(false);
+  };
+
+  const handleDayAfterChange = () => {
+    setToday(false);
+    setTomorrow(false);
+    setDayAfter(true);
+  };
+
   return (
     <div className="forecastContainer">
       <div className="days">
-        <h3 className="dayOfWeek">Today</h3>
-        <h3 className="dayOfWeek">Tomorrow</h3>
-        <h3 className="dayOfWeek">{day}</h3>
+        <button type="button" className="dayOfWeek" onClick={handleTodayChange}>
+          Today
+        </button>
+        <button
+          type="button"
+          className="dayOfWeek"
+          onClick={handleTomorrowChange}
+        >
+          Tomorrow
+        </button>
+        <button
+          type="button"
+          className="dayOfWeek"
+          onClick={handleDayAfterChange}
+        >
+          {day}
+        </button>
       </div>
       <div className="hours-box">
         <div className="hour-weather">
