@@ -152,16 +152,9 @@ flex: 2;
 .weathetemp-status{
   display: flex;
 }
-  .forecastContainer{
-margin-right: 82px;
-margin-left: 82px;
-border-radius: 23px 20px 0px 0px;
-  }
 
-  .savedlocations-box{
-    margin-right: 82px;
-margin-left: 82px;
-  }
+
+
 
   .img-hours{
     width: 123px;
@@ -187,9 +180,14 @@ margin-left: 82px;
 
 .subButton{
   width: 320px;
-      margin-right: 84px;
+  margin-right: 84px;
 }
 
+.subButtonDark{ 
+width: 320px;
+margin-right: 84px;
+background-color: #3C4048;
+}
 
 
 .hour-weather{
@@ -202,5 +200,10 @@ margin-left: 82px;
     align-items: flex-start;
     margin-left: 101px;
     
+}
+
+.main-containerDark {
+  
+  color: #FFFFFF;
 }
 }

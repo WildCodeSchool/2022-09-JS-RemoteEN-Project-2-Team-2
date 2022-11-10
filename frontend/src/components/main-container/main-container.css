@@ -39,6 +39,7 @@
   justify-content: start;
   margin-bottom: 0px;
   margin-top: 10px;
+  
 }
 
 .main-container {
@@ -52,13 +53,7 @@
 }
 
 .main-containerDark {
-  background-color: #34383F;
-  border-radius: 20px 20px 0 0;
-  padding-bottom: 27px;
-  padding-top: 5px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 50px;
+ 
   color: #FFFFFF;
 }
 
@@ -90,7 +85,7 @@
   margin: 0;
   font-weight: bold;
   text-align: center;
-  color: #FFFFFF;
+  color: #515253;
 }
 
 .main-containerDark p {
