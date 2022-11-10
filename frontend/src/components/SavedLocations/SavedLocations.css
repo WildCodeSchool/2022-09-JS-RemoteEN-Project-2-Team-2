@@ -9,8 +9,8 @@
   background: linear-gradient(179.99deg,rgb(233,233,233) 10.45%, rgba(242, 242, 242, 0.965) 85.34%);
   mix-blend-mode: normal;
   backdrop-filter: blur(5px);
-  margin-right: 82px;
-margin-left: 82px;
+  margin-right: 15px;
+margin-left: 15px;
   margin-top: 31px;
   margin-bottom: 50px; 
 }
@@ -21,8 +21,8 @@ margin-left: 82px;
   background: #34383F;
   mix-blend-mode: normal;
   backdrop-filter: blur(5px);
-  margin-right: 82px;
-  margin-left: 82px;
+  margin-right: 15px;
+  margin-left: 15px;
   margin-top: 31px;
   margin-bottom: 50px; 
 }

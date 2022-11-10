@@ -229,5 +229,45 @@ background-color: #3C4048;
     
 }
 
+.forecastContainer {
+  margin-top: 12px;
+  background-color: white;
+    margin-right: 82px;
+    margin-left: 82px;
+    border-radius: 23px 20px 0px 0px;
+
+}
+
+.forecastContainerDark {
+  margin-top: 12px;
+  margin-right: 82px;
+  margin-left: 82px;
+  border-radius: 23px 20px 0px 0px;
+
+  background-color: #42464d;
+}
+.savedlocations-box {
+  border-radius: 23px 20px 0px 0px;
+  border: 1px solid #ffffff;
+  background: linear-gradient(179.99deg,rgb(233,233,233) 10.45%, rgba(242, 242, 242, 0.965) 85.34%);
+  mix-blend-mode: normal;
+  backdrop-filter: blur(5px);
+  margin-right: 82px;
+margin-left: 82px;
+  margin-top: 31px;
+  margin-bottom: 50px; 
+}
+
+.savedlocations-boxDark {
+  border-radius: 23px 20px 0px 0px;
+  border: 1px solid #363942;
+  background: #34383F;
+  mix-blend-mode: normal;
+  backdrop-filter: blur(5px);
+  margin-right: 82px;
+  margin-left: 82px;
+  margin-top: 31px;
+  margin-bottom: 50px; 
+}
 
 }
