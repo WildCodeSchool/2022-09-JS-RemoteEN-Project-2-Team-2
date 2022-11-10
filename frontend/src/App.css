@@ -13,6 +13,7 @@ body {
 
 /* Dark Version */
 .appContainerDesktopDark{
+
   background: linear-gradient(180deg, #373C46 0%, #040405 100%);
 }
 
@@ -55,6 +56,14 @@ body {
 @media screen and (min-width : 1024px) {
   
   .sunnyLogo{
+  top: 0;
+    position: absolute;
+    margin-top: 54px;
+    width: 123px;
+    margin-left: 52px;
+}
+
+.sunnyLogoDark{
   top: 0;
     position: absolute;
     margin-top: 54px;
