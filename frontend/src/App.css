@@ -99,6 +99,7 @@ body {
     margin-bottom: 50px;
   }
 
+
   .myWeather{
   align-self: center;
   font-size: 30px; 
@@ -130,6 +131,17 @@ flex: 2;
 
   .main-container{
     background-color: transparent;
+  }
+
+  .main-containerDark {
+    background-color: transparent;
+    color: #FFFFFF;
+      padding-bottom: 27px;
+      padding-top: 5px;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 50px;
+    
   }
 
   .myCity{
@@ -164,6 +176,10 @@ flex: 2;
   .hour{
     font-size: 16px;
   }
+
+  .hourDark{
+    font-size: 16px;
+  }
   .background{
     background-size: 57%;
   }
@@ -188,6 +204,9 @@ width: 320px;
 margin-right: 84px;
 background-color: #3C4048;
 }
+.subButtonDark:active {
+  transform: scale(0.98);
+}
 
 
 .hour-weather{
@@ -202,8 +221,13 @@ background-color: #3C4048;
     
 }
 
-.main-containerDark {
-  
-  color: #FFFFFF;
+.weatherMainDark{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 101px;
+    
 }
+
+
 }

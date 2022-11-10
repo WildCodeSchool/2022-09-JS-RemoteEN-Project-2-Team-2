@@ -53,8 +53,13 @@
 }
 
 .main-containerDark {
- 
-  color: #FFFFFF;
+  background-color: #42464D;
+  border-radius: 20px 20px 0 0;
+  padding-bottom: 27px;
+  padding-top: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 50px;
 }
 
 .main-container h3 {

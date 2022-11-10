@@ -72,6 +72,9 @@ margin-left: 82px;
   margin-bottom: 11px;
   margin-right: -18px;
 }
+.img-button:active {
+  transform: scale(0.98);
+}
 
 .box-saved-locations {
   display: grid;
