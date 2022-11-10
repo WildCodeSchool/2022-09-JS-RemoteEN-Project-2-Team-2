@@ -1,5 +1,6 @@
 import React from "react";
 import button from "../../assets/Button.svg";
+import buttonDark from "../../assets/ButtonDark.svg";
 import Cities from "../Cities/Cities";
 import "./SavedLocations.css";
 import RectangleDark from "../../assets/RectangleDark.png";
@@ -31,7 +32,13 @@ function SavedLocations({ darkThemeOn }) {
         >
           <div className="button-flexbox">
             <button className="adding-saved-locations" type="button">
-              <img className="img-button" src={button} alt="" />
+              <img
+                className={
+                  darkThemeOn === true ? "img-buttonDark" : "img-button"
+                }
+                src={darkThemeOn === true ? buttonDark : button}
+                alt=""
+              />
             </button>
           </div>
           <div className="box-saved-locations">
