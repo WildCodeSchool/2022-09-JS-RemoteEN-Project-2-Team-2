@@ -73,6 +73,7 @@
   color: #515253;
 }
 
+
 .daysDark {
   display: flex;
   gap: 5px;
@@ -92,13 +93,8 @@
   color: #ffffff;
 }
 
-.dayOfWeek.dayOfWeek:active {
-  --color: #1d272c;
-  --position: center bottom;
-  --width: 20px;
-  --height: 1px;
-  background: linear-gradient(var(--color), var(--color)) var(--position) /
-    var(--width) var(--height) no-repeat;
+.dayOfWeek{
+  text-transform: uppercase;
 }
 
 

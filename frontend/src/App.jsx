@@ -48,12 +48,15 @@ function App() {
     >
       <Search onSearchChange={handleOnSearchChange} />
       <Toggle toggled={toggled} onClick={handleClick} />
+
       {currentWeather && (
         <MainContainer darkThemeOn={toggled} data={currentWeather} />
       )}
-      <HoursForecast darkThemeOn={toggled} />
+      {forecast && <HoursForecast darkThemeOn={toggled} data={forecast} />}
+  
       <SavedLocations darkThemeOn={toggled} />
       <SubscribeBtn darkThemeOn={toggled} />
+
       <div className="weatherMain">
         <div className="myFooter">
           <img
