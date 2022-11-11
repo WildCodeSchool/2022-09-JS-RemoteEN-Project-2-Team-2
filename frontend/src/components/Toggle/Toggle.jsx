@@ -9,7 +9,7 @@ function Toggle({ toggled, onClick }) {
         tabIndex={0}
         onClick={onClick}
         onKeyDown={onClick}
-        className={`toggle${toggled ? " night" : ""}`}
+        className={`toggle${toggled ? "night" : ""}`}
       >
         <div className="notch" />
       </div>

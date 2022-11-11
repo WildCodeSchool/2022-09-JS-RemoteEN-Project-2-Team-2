@@ -4,6 +4,9 @@ import cloudy from "../../assets/cloudy.svg";
 import nightCloudy from "../../assets/night cloudy.svg";
 import clear from "../../assets/clear.svg";
 
+
+function HoursForecast({ darkThemeOn, data }) {
+
 import brokenCloudsD from "../../assets/icons/brokenCloudsD.svg";
 import brokenCloudsN from "../../assets/icons/brokenCloudsN.svg";
 import clearSkyD from "../../assets/icons/clearSkyD.svg";
@@ -23,7 +26,7 @@ import snowN from "../../assets/icons/snowN.svg";
 import thunderstormD from "../../assets/icons/thunderstormD.svg";
 import thunderstormN from "../../assets/icons/thunderstormN.svg";
 
-function HoursForecast({ data }) {
+
   const dayOfWeekDigit = new Date().getDay();
   let day = dayOfWeekDigit + 2;
 
@@ -104,8 +107,13 @@ function HoursForecast({ data }) {
   const finalHour4 = hourArray4.slice(11).join("");
 
   return (
-    <div className="forecastContainer">
-      <div className="days">
+
+    <div
+      className={
+        darkThemeOn === true ? "forecastContainerDark" : "forecastContainer"
+      }
+    >
+      <div className={darkThemeOn === true ? "daysDark" : "days"}>
         <button
           type="button"
           className={
@@ -139,9 +147,9 @@ function HoursForecast({ data }) {
         </button>
       </div>
       {today ? (
-        <div className="hours-box">
+        <div className={darkThemeOn === true ? "hours-boxDark" : "hours-box"}>
           <div className="hour-weather">
-            <p className="hour">{finalHour1}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour1}</p>
             <img
               className="img-hours"
               src={
@@ -172,10 +180,10 @@ function HoursForecast({ data }) {
               }
               alt=""
             />
-            <p className="temperature">{Math.round(data.list[0].main.temp)}°</p>
+            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>{Math.round(data.list[0].main.temp)}°</p>
           </div>
           <div className="hour-weather">
-            <p className="hour">{finalHour2}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour2}</p>
             <img
               className="img-hours"
               src={
@@ -206,10 +214,10 @@ function HoursForecast({ data }) {
               }
               alt=""
             />
-            <p className="temperature">{Math.round(data.list[2].main.temp)}°</p>
+            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>{Math.round(data.list[2].main.temp)}°</p>
           </div>
           <div className="hour-weather">
-            <p className="hour">{finalHour3}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour3}</p>
             <img
               className="img-hours"
               src={
@@ -240,10 +248,10 @@ function HoursForecast({ data }) {
               }
               alt=""
             />
-            <p className="temperature">{Math.round(data.list[4].main.temp)}°</p>
+            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>{Math.round(data.list[4].main.temp)}°</p>
           </div>
           <div className="hour-weather">
-            <p className="hour">{finalHour4}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour4}</p>
             <img
               className="img-hours"
               src={
@@ -274,14 +282,14 @@ function HoursForecast({ data }) {
               }
               alt=""
             />
-            <p className="temperature">{Math.round(data.list[6].main.temp)}°</p>
+            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>{Math.round(data.list[6].main.temp)}°</p>
           </div>
         </div>
       ) : null}
       {tomorrow ? (
         <div className="hours-box">
           <div className="hour-weather">
-            <p className="hour">{finalHour1}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour1}</p>
             <img
               className="img-hours"
               src={
@@ -312,10 +320,10 @@ function HoursForecast({ data }) {
               }
               alt=""
             />
-            <p className="temperature">{Math.round(data.list[8].main.temp)}°</p>
+            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>{Math.round(data.list[8].main.temp)}°</p>
           </div>
           <div className="hour-weather">
-            <p className="hour">{finalHour2}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour2}</p>
             <img
               className="img-hours"
               src={
@@ -346,12 +354,12 @@ function HoursForecast({ data }) {
               }
               alt=""
             />
-            <p className="temperature">
+            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>
               {Math.round(data.list[10].main.temp)}°
             </p>
           </div>
           <div className="hour-weather">
-            <p className="hour">{finalHour3}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour3}</p>
             <img
               className="img-hours"
               src={
@@ -382,12 +390,12 @@ function HoursForecast({ data }) {
               }
               alt=""
             />
-            <p className="temperature">
+            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>
               {Math.round(data.list[12].main.temp)}°
             </p>
           </div>
           <div className="hour-weather">
-            <p className="hour">{finalHour4}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour4}</p>
             <img
               className="img-hours"
               src={
@@ -418,7 +426,7 @@ function HoursForecast({ data }) {
               }
               alt=""
             />
-            <p className="temperature">
+            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>
               {Math.round(data.list[14].main.temp)}°
             </p>
           </div>
@@ -427,7 +435,7 @@ function HoursForecast({ data }) {
       {dayAfter ? (
         <div className="hours-box">
           <div className="hour-weather">
-            <p className="hour">{finalHour1}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour1}</p>
             <img
               className="img-hours"
               src={
@@ -458,13 +466,13 @@ function HoursForecast({ data }) {
               }
               alt=""
             />
-            <p className="temperature">
+            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>
               {" "}
               {Math.round(data.list[16].main.temp)}°
             </p>
           </div>
           <div className="hour-weather">
-            <p className="hour">{finalHour2}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour2}</p>
             <img
               className="img-hours"
               src={
@@ -495,13 +503,13 @@ function HoursForecast({ data }) {
               }
               alt=""
             />
-            <p className="temperature">
+            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>
               {" "}
               {Math.round(data.list[18].main.temp)}°
             </p>
           </div>
           <div className="hour-weather">
-            <p className="hour">{finalHour3}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour3}</p>
             <img
               className="img-hours"
               src={
@@ -532,13 +540,13 @@ function HoursForecast({ data }) {
               }
               alt=""
             />
-            <p className="temperature">
+            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>
               {" "}
               {Math.round(data.list[20].main.temp)}°
             </p>
           </div>
           <div className="hour-weather">
-            <p className="hour">{finalHour4}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour4}</p>
             <img
               className="img-hours"
               src={
@@ -569,11 +577,12 @@ function HoursForecast({ data }) {
               }
               alt=""
             />
-            <p className="temperature">
+            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>
               {" "}
               {Math.round(data.list[22].main.temp)}
             </p>
           </div>
+
         </div>
       ) : null}
     </div>

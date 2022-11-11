@@ -5,9 +5,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.appContainerDesktop{
   background: linear-gradient(180deg, #ffffff 0%, #d9d9d9 100%);
 }
 
+/* Dark Version */
+.appContainerDesktopDark{
+
+  background: linear-gradient(180deg, #373C46 0%, #040405 100%);
+}
 
 
 .myCity {
@@ -36,6 +44,11 @@ body {
   margin-bottom: 50px;
 }
 
+.sunnyLogoDark {
+  width: 5rem;
+  margin-bottom: 50px;
+}
+
 
 @media screen and (min-width : 1024px) {
 
@@ -46,6 +59,14 @@ body {
     font-size: 14px!important;
   }
   .sunnyLogo{
+  top: 0;
+    position: absolute;
+    margin-top: 54px;
+    width: 123px;
+    margin-left: 52px;
+}
+
+.sunnyLogoDark{
   top: 0;
     position: absolute;
     margin-top: 54px;
@@ -82,6 +103,7 @@ body {
     margin-bottom: 50px;
   }
 
+
   .myWeather{
   align-self: center;
   font-size: 30px; 
@@ -115,6 +137,17 @@ flex: 2;
     background-color: transparent;
   }
 
+  .main-containerDark {
+    background-color: transparent;
+    color: #FFFFFF;
+      padding-bottom: 27px;
+      padding-top: 5px;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 50px;
+    
+  }
+
   .myCity{
     text-align: left;
     font-size: 40px;
@@ -135,16 +168,7 @@ flex: 2;
 .weathetemp-status{
   display: flex;
 }
-.forecastContainer{
-  margin-right: 92px;
-margin-left: 82px;
-border-radius: 23px 20px 0px 0px;
-  }
 
-  .savedlocations-box{
-    margin-right: 92px;
-margin-left: 82px;
-  }
 
   .saved-components{
     margin-right: 122px;
@@ -156,6 +180,10 @@ margin-left: 82px;
   }
 
   .hour{
+    font-size: 16px;
+  }
+
+  .hourDark{
     font-size: 16px;
   }
   .background{
@@ -175,9 +203,17 @@ margin-left: 82px;
 
 .subButton{
   width: 320px;
-      margin-right: 84px;
+  margin-right: 84px;
 }
 
+.subButtonDark{ 
+width: 320px;
+margin-right: 84px;
+background-color: #3C4048;
+}
+.subButtonDark:active {
+  transform: scale(0.98);
+}
 
 
 .hour-weather{
@@ -192,25 +228,55 @@ margin-left: 82px;
     
 }
 
-.separator {
-  margin-right: 30px;
-  margin-left: 30px;
-  width: 50px;
-  height: 1px;
-  background: #515253;
+
+.weatherMainDark{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 101px;
+    
 }
 
-.toggle{
-  margin-right: 92px;
-  }
+.forecastContainer {
+  margin-top: 12px;
+  background-color: white;
+    margin-right: 82px;
+    margin-left: 82px;
+    border-radius: 23px 20px 0px 0px;
 
-  .toggle-container {
-    position: absolute;
-    top: 55px!important;
-    right: 32px;
-    }
-  
-    .sun-position{
-      margin-top: 50px; 
-    }
+}
+
+.forecastContainerDark {
+  margin-top: 12px;
+  margin-right: 82px;
+  margin-left: 82px;
+  border-radius: 23px 20px 0px 0px;
+
+  background-color: #42464d;
+}
+.savedlocations-box {
+  border-radius: 23px 20px 0px 0px;
+  border: 1px solid #ffffff;
+  background: linear-gradient(179.99deg,rgb(233,233,233) 10.45%, rgba(242, 242, 242, 0.965) 85.34%);
+  mix-blend-mode: normal;
+  backdrop-filter: blur(5px);
+  margin-right: 82px;
+margin-left: 82px;
+  margin-top: 31px;
+  margin-bottom: 50px; 
+}
+
+.savedlocations-boxDark {
+  border-radius: 23px 20px 0px 0px;
+  border: 1px solid #363942;
+  background: #34383F;
+  mix-blend-mode: normal;
+  backdrop-filter: blur(5px);
+  margin-right: 82px;
+  margin-left: 82px;
+  margin-top: 31px;
+  margin-bottom: 50px; 
+}
+
+
 }
