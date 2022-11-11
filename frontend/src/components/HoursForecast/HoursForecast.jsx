@@ -113,7 +113,13 @@ function HoursForecast({ darkThemeOn, data }) {
         <button
           type="button"
           className={
-            today ? "dayOfWeek border-b-[1px] border-b-[#505152]" : "dayOfWeek "
+            darkThemeOn
+              ? today
+                ? "dayOfWeek border-b-[1px] border-b-[#ffffff]"
+                : "dayOfWeek "
+              : today
+              ? "dayOfWeek border-b-[1px] border-b-[#505152]"
+              : "dayOfWeek "
           }
           onClick={handleTodayChange}
         >
@@ -122,7 +128,11 @@ function HoursForecast({ darkThemeOn, data }) {
         <button
           type="button"
           className={
-            tomorrow
+            darkThemeOn
+              ? tomorrow
+                ? "dayOfWeek border-b-[1px] border-b-[#ffffff]"
+                : "dayOfWeek "
+              : tomorrow
               ? "dayOfWeek border-b-[1px] border-b-[#505152]"
               : "dayOfWeek "
           }
@@ -133,7 +143,11 @@ function HoursForecast({ darkThemeOn, data }) {
         <button
           type="button"
           className={
-            dayAfter
+            darkThemeOn
+              ? dayAfter
+                ? "dayOfWeek border-b-[1px] border-b-[#ffffff]"
+                : "dayOfWeek "
+              : dayAfter
               ? "dayOfWeek border-b-[1px] border-b-[#505152]"
               : "dayOfWeek "
           }
@@ -315,7 +329,7 @@ function HoursForecast({ darkThemeOn, data }) {
         </div>
       ) : null}
       {tomorrow ? (
-        <div className="hours-box">
+        <div className={darkThemeOn === true ? "hours-boxDark" : "hours-box"}>
           <div className="hour-weather">
             <p className={darkThemeOn === true ? "hourDark" : "hour"}>
               {finalHour1}
@@ -487,7 +501,7 @@ function HoursForecast({ darkThemeOn, data }) {
         </div>
       ) : null}
       {dayAfter ? (
-        <div className="hours-box">
+        <div className={darkThemeOn === true ? "hours-boxDark" : "hours-box"}>
           <div className="hour-weather">
             <p className={darkThemeOn === true ? "hourDark" : "hour"}>
               {finalHour1}
