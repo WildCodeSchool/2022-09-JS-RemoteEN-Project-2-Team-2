@@ -45,15 +45,17 @@ padding-bottom: 10px;
 
   color: #515253;
 }
-
-.dayOfWeek.dayOfWeek:active {
+.dayOfWeek{
+  text-transform: uppercase;
+}
+/*.dayOfWeek.dayOfWeek:active {
   --color: #1d272c;
   --position: center bottom;
   --width: 20px;
   --height: 1px;
   background: linear-gradient(var(--color), var(--color)) var(--position) /
     var(--width) var(--height) no-repeat;
-}
+}*/
 
 .hour{
   font-size: 10px;

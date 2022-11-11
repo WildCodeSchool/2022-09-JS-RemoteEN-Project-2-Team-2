@@ -54,8 +54,7 @@ function MainContainer({ data }) {
         <div className="weatherMain">
           <p className="myCity">{data.city}</p>
           <p className="myDate">
-            {dateNumeric}
-            <span className="weekDay">, {dateDay}</span>
+            {dateNumeric},<span className="weekDay"> {dateDay}</span>
           </p>
 
           <div className="weatherMainFlex">
