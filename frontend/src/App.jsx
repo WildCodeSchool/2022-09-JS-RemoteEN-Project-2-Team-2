@@ -53,7 +53,7 @@ function App() {
         <MainContainer darkThemeOn={toggled} data={currentWeather} />
       )}
       {forecast && <HoursForecast darkThemeOn={toggled} data={forecast} />}
-  
+
       <SavedLocations darkThemeOn={toggled} />
       <SubscribeBtn darkThemeOn={toggled} />
 

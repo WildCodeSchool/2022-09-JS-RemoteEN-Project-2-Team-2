@@ -4,9 +4,6 @@ import cloudy from "../../assets/cloudy.svg";
 import nightCloudy from "../../assets/night cloudy.svg";
 import clear from "../../assets/clear.svg";
 
-
-function HoursForecast({ darkThemeOn, data }) {
-
 import brokenCloudsD from "../../assets/icons/brokenCloudsD.svg";
 import brokenCloudsN from "../../assets/icons/brokenCloudsN.svg";
 import clearSkyD from "../../assets/icons/clearSkyD.svg";
@@ -26,7 +23,7 @@ import snowN from "../../assets/icons/snowN.svg";
 import thunderstormD from "../../assets/icons/thunderstormD.svg";
 import thunderstormN from "../../assets/icons/thunderstormN.svg";
 
-
+function HoursForecast({ darkThemeOn, data }) {
   const dayOfWeekDigit = new Date().getDay();
   let day = dayOfWeekDigit + 2;
 
@@ -107,7 +104,6 @@ import thunderstormN from "../../assets/icons/thunderstormN.svg";
   const finalHour4 = hourArray4.slice(11).join("");
 
   return (
-
     <div
       className={
         darkThemeOn === true ? "forecastContainerDark" : "forecastContainer"
@@ -117,7 +113,13 @@ import thunderstormN from "../../assets/icons/thunderstormN.svg";
         <button
           type="button"
           className={
-            today ? "dayOfWeek border-b-[1px] border-b-[#505152]" : "dayOfWeek "
+            darkThemeOn
+              ? today
+                ? "dayOfWeek border-b-[1px] border-b-[#ffffff]"
+                : "dayOfWeek "
+              : today
+              ? "dayOfWeek border-b-[1px] border-b-[#505152]"
+              : "dayOfWeek "
           }
           onClick={handleTodayChange}
         >
@@ -126,7 +128,11 @@ import thunderstormN from "../../assets/icons/thunderstormN.svg";
         <button
           type="button"
           className={
-            tomorrow
+            darkThemeOn
+              ? tomorrow
+                ? "dayOfWeek border-b-[1px] border-b-[#ffffff]"
+                : "dayOfWeek "
+              : tomorrow
               ? "dayOfWeek border-b-[1px] border-b-[#505152]"
               : "dayOfWeek "
           }
@@ -137,7 +143,11 @@ import thunderstormN from "../../assets/icons/thunderstormN.svg";
         <button
           type="button"
           className={
-            dayAfter
+            darkThemeOn
+              ? dayAfter
+                ? "dayOfWeek border-b-[1px] border-b-[#ffffff]"
+                : "dayOfWeek "
+              : dayAfter
               ? "dayOfWeek border-b-[1px] border-b-[#505152]"
               : "dayOfWeek "
           }
@@ -149,7 +159,9 @@ import thunderstormN from "../../assets/icons/thunderstormN.svg";
       {today ? (
         <div className={darkThemeOn === true ? "hours-boxDark" : "hours-box"}>
           <div className="hour-weather">
-            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour1}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>
+              {finalHour1}
+            </p>
             <img
               className="img-hours"
               src={
@@ -180,10 +192,18 @@ import thunderstormN from "../../assets/icons/thunderstormN.svg";
               }
               alt=""
             />
-            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>{Math.round(data.list[0].main.temp)}°</p>
+            <p
+              className={
+                darkThemeOn === true ? "temperatureDark" : "temperature"
+              }
+            >
+              {Math.round(data.list[0].main.temp)}°
+            </p>
           </div>
           <div className="hour-weather">
-            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour2}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>
+              {finalHour2}
+            </p>
             <img
               className="img-hours"
               src={
@@ -214,10 +234,18 @@ import thunderstormN from "../../assets/icons/thunderstormN.svg";
               }
               alt=""
             />
-            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>{Math.round(data.list[2].main.temp)}°</p>
+            <p
+              className={
+                darkThemeOn === true ? "temperatureDark" : "temperature"
+              }
+            >
+              {Math.round(data.list[2].main.temp)}°
+            </p>
           </div>
           <div className="hour-weather">
-            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour3}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>
+              {finalHour3}
+            </p>
             <img
               className="img-hours"
               src={
@@ -248,10 +276,18 @@ import thunderstormN from "../../assets/icons/thunderstormN.svg";
               }
               alt=""
             />
-            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>{Math.round(data.list[4].main.temp)}°</p>
+            <p
+              className={
+                darkThemeOn === true ? "temperatureDark" : "temperature"
+              }
+            >
+              {Math.round(data.list[4].main.temp)}°
+            </p>
           </div>
           <div className="hour-weather">
-            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour4}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>
+              {finalHour4}
+            </p>
             <img
               className="img-hours"
               src={
@@ -282,14 +318,22 @@ import thunderstormN from "../../assets/icons/thunderstormN.svg";
               }
               alt=""
             />
-            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>{Math.round(data.list[6].main.temp)}°</p>
+            <p
+              className={
+                darkThemeOn === true ? "temperatureDark" : "temperature"
+              }
+            >
+              {Math.round(data.list[6].main.temp)}°
+            </p>
           </div>
         </div>
       ) : null}
       {tomorrow ? (
-        <div className="hours-box">
+        <div className={darkThemeOn === true ? "hours-boxDark" : "hours-box"}>
           <div className="hour-weather">
-            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour1}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>
+              {finalHour1}
+            </p>
             <img
               className="img-hours"
               src={
@@ -320,10 +364,18 @@ import thunderstormN from "../../assets/icons/thunderstormN.svg";
               }
               alt=""
             />
-            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>{Math.round(data.list[8].main.temp)}°</p>
+            <p
+              className={
+                darkThemeOn === true ? "temperatureDark" : "temperature"
+              }
+            >
+              {Math.round(data.list[8].main.temp)}°
+            </p>
           </div>
           <div className="hour-weather">
-            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour2}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>
+              {finalHour2}
+            </p>
             <img
               className="img-hours"
               src={
@@ -354,12 +406,18 @@ import thunderstormN from "../../assets/icons/thunderstormN.svg";
               }
               alt=""
             />
-            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>
+            <p
+              className={
+                darkThemeOn === true ? "temperatureDark" : "temperature"
+              }
+            >
               {Math.round(data.list[10].main.temp)}°
             </p>
           </div>
           <div className="hour-weather">
-            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour3}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>
+              {finalHour3}
+            </p>
             <img
               className="img-hours"
               src={
@@ -390,12 +448,18 @@ import thunderstormN from "../../assets/icons/thunderstormN.svg";
               }
               alt=""
             />
-            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>
+            <p
+              className={
+                darkThemeOn === true ? "temperatureDark" : "temperature"
+              }
+            >
               {Math.round(data.list[12].main.temp)}°
             </p>
           </div>
           <div className="hour-weather">
-            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour4}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>
+              {finalHour4}
+            </p>
             <img
               className="img-hours"
               src={
@@ -426,16 +490,22 @@ import thunderstormN from "../../assets/icons/thunderstormN.svg";
               }
               alt=""
             />
-            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>
+            <p
+              className={
+                darkThemeOn === true ? "temperatureDark" : "temperature"
+              }
+            >
               {Math.round(data.list[14].main.temp)}°
             </p>
           </div>
         </div>
       ) : null}
       {dayAfter ? (
-        <div className="hours-box">
+        <div className={darkThemeOn === true ? "hours-boxDark" : "hours-box"}>
           <div className="hour-weather">
-            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour1}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>
+              {finalHour1}
+            </p>
             <img
               className="img-hours"
               src={
@@ -466,13 +536,19 @@ import thunderstormN from "../../assets/icons/thunderstormN.svg";
               }
               alt=""
             />
-            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>
+            <p
+              className={
+                darkThemeOn === true ? "temperatureDark" : "temperature"
+              }
+            >
               {" "}
               {Math.round(data.list[16].main.temp)}°
             </p>
           </div>
           <div className="hour-weather">
-            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour2}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>
+              {finalHour2}
+            </p>
             <img
               className="img-hours"
               src={
@@ -503,13 +579,19 @@ import thunderstormN from "../../assets/icons/thunderstormN.svg";
               }
               alt=""
             />
-            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>
+            <p
+              className={
+                darkThemeOn === true ? "temperatureDark" : "temperature"
+              }
+            >
               {" "}
               {Math.round(data.list[18].main.temp)}°
             </p>
           </div>
           <div className="hour-weather">
-            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour3}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>
+              {finalHour3}
+            </p>
             <img
               className="img-hours"
               src={
@@ -540,13 +622,19 @@ import thunderstormN from "../../assets/icons/thunderstormN.svg";
               }
               alt=""
             />
-            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>
+            <p
+              className={
+                darkThemeOn === true ? "temperatureDark" : "temperature"
+              }
+            >
               {" "}
               {Math.round(data.list[20].main.temp)}°
             </p>
           </div>
           <div className="hour-weather">
-            <p className={darkThemeOn === true ? "hourDark" : "hour"}>{finalHour4}</p>
+            <p className={darkThemeOn === true ? "hourDark" : "hour"}>
+              {finalHour4}
+            </p>
             <img
               className="img-hours"
               src={
@@ -577,12 +665,15 @@ import thunderstormN from "../../assets/icons/thunderstormN.svg";
               }
               alt=""
             />
-            <p className={darkThemeOn === true ? "temperatureDark" : "temperature"}>
+            <p
+              className={
+                darkThemeOn === true ? "temperatureDark" : "temperature"
+              }
+            >
               {" "}
               {Math.round(data.list[22].main.temp)}
             </p>
           </div>
-
         </div>
       ) : null}
     </div>

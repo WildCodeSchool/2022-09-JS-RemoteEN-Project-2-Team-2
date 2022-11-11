@@ -91,7 +91,7 @@ body {
 
   .css-b62m3t-container{
     width: 250px;
-    margin-top: 54px;
+    margin-top: 16px;
     margin-right : 200px;
   }
 
@@ -278,5 +278,30 @@ margin-left: 82px;
   margin-bottom: 50px; 
 }
 
+
+.separator {
+margin-right: 30px;
+margin-left: 30px;
+width: 50px;
+height: 1px;
+background: #515253;
+}
+
+.toggle{
+margin-right: 92px;
+}
+
+.toggle-container {
+position: absolute;
+top: 50px!important;
+}
+
+.togglenight{
+  margin-right: 92px;
+}
+
+.sun-position{
+  margin-top: 50px;
+  }
 
 }
