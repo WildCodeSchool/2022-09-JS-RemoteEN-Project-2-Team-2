@@ -2,8 +2,25 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: linear-gradient(
+    179.99deg,
+    rgb(233, 233, 233) 10.45%,
+    rgba(242, 242, 242, 0.965) 85.34%
+  );
+  mix-blend-mode: normal;
+  backdrop-filter: blur(5px);
+}
 
-  background: linear-gradient(179.99deg, rgba(187, 187, 187, 0.65) 28.45%, rgba(242, 242, 242, 0.89) 85.34%);
+.hours-boxDark {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #363942;
+  mix-blend-mode: normal;
   mix-blend-mode: normal;
   backdrop-filter: blur(5px);
 }
@@ -18,4 +35,91 @@
   align-items: stretch;
   justify-items: center;
   margin-top: 5%;
+}
+
+.forecastContainer {
+  margin-top: 12px;
+  background-color: white;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 23px 20px 0px 0px;
+
+}
+
+.forecastContainerDark {
+  margin-top: 12px;
+  margin-right: 15px;
+  margin-left: 15px;
+  border-radius: 23px 20px 0px 0px;
+
+  background-color: #42464d;
+}
+.days {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 32px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #515253;
+}
+
+
+.daysDark {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 32px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.dayOfWeek{
+  text-transform: uppercase;
+}
+
+
+.hour {
+  font-size: 10px;
+  font-weight: medium;
+}
+
+.hourDark {
+  font-size: 10px;
+  font-weight: medium;
+  color: #ffffff;
+}
+
+.temperature {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.temperatureDark {
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.img-hours {
+  height: 41px;
 }
