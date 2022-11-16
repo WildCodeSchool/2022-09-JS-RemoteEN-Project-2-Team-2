@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./HoursForecast.css";
 import cloudy from "../../assets/cloudy.svg";
 import nightCloudy from "../../assets/night cloudy.svg";
@@ -74,6 +74,12 @@ function HoursForecast({ darkThemeOn, data }) {
     setTomorrow(false);
     setDayAfter(true);
   };
+
+  useEffect(() => {
+    setToday(true);
+    setTomorrow(false);
+    setDayAfter(false);
+  }, [data.city]);
 
   const dateToday1 = new Date(data.list[0].dt_txt);
   const dateHour1 = dateToday1.toLocaleDateString("en-us", {

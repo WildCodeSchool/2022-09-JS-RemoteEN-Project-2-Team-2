@@ -54,7 +54,7 @@ function MainContainer({ data, darkThemeOn }) {
         <div
           className={darkThemeOn === true ? "weatherMainDark" : "weatherMain"}
         >
-          <p className="myCity">{data.city}</p>
+          <p className="myCity">{data.name}</p>
           <p className="myDate">
             {dateNumeric},<span className="weekDay"> {dateDay}</span>
           </p>

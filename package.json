@@ -20,6 +20,7 @@
     "husky": "^7.0.0"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
     "react-accessible-accordion": "^5.0.0",
     "react-select-async-paginate": "^0.7.0"
   }
