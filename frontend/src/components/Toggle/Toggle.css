@@ -1,5 +1,5 @@
 .toggle{
-    height: 36px;
+    height: 38px;
     width: 20px;
     border-radius: 10px;
     background-color: #282B33;
@@ -10,7 +10,7 @@
     
     .togglenight{
     background-color: whitesmoke;
-    height: 36px;
+    height: 38px;
     width: 20px;
     border-radius: 10px;
     position: relative;
@@ -31,11 +31,15 @@
     .togglenight > .notch {
     background-color: #282B33;
     transform: translate(0,16px);
+    top: 5px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
     }
 
     .toggle-container{
     position: absolute;
-    top: 32px;
+    top: 30px;
     right: 32px;
     
     
