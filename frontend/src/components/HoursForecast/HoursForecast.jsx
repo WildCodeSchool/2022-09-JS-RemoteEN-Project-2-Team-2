@@ -677,7 +677,7 @@ function HoursForecast({ darkThemeOn, data }) {
               }
             >
               {" "}
-              {Math.round(data.list[22].main.temp)}
+              {Math.round(data.list[22].main.temp)}°
             </p>
           </div>
         </div>

@@ -124,13 +124,21 @@ function MainContainer({ data, darkThemeOn }) {
           <div className="sun-position">
             <div className="sunrise">
               <h3>Sunrise</h3>
-              <div className="border-Sunrise">
+              <div
+                className={
+                  darkThemeOn === true ? "border-SunriseDark" : "border-Sunrise"
+                }
+              >
                 <p className="sunrise-time">{finalSunriseTime}</p>
               </div>
             </div>
             <div className="sunset">
               <h3>Sunset</h3>
-              <div className="border-Sunset">
+              <div
+                className={
+                  darkThemeOn === true ? "border-SunsetDark" : "border-Sunset"
+                }
+              >
                 <p className="sunset-time">{finalSunsetTime}</p>
               </div>
             </div>

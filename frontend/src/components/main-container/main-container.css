@@ -137,6 +137,22 @@
   padding: 2px;
 }
 
+.border-SunriseDark{
+  background: linear-gradient(180deg, #ffffff0a 10%, #ff7a00 100%);
+  width: 81.25px;
+  height: 81.25px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.border-SunsetDark{
+  background: linear-gradient(180deg, #ffffff0a 10%, #ff7a00 100%);
+  width: 81.25px;
+  height: 81.25px;
+  border-radius: 50%;
+  padding: 2px;
+}
+
 .border-Sunset {
   background: linear-gradient(180deg, #ffff 10%, #ff4d00 100%);
   width: 81.25px;
