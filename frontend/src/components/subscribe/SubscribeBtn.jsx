@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./SubscribeBtn.css";
 import Subscribe from "./components/Subscribe";
+import fewCloudsD from "../../assets/icons/fewCloudsD.svg";
+import logo from "../../assets/logo/suni_logo.png";
 
 function SubscribeBtn({ darkThemeOn }) {
   const [buttonSubbtn, setButtonSubbtn] = useState(false);
@@ -58,38 +60,34 @@ function SubscribeBtn({ darkThemeOn }) {
         Subscribe now
       </button>
       <Subscribe trigger={buttonSubbtn} setTrigger={handleClose}>
-        <div>
-          <h3>Subscribe Now!</h3>
+        <div className="suscr-header">
+          <h3>Subscribe</h3>
+          <p className="notification">
+            Get notification about the current weather every day
+          </p>
         </div>
         <form onSubmit={handleSubmit} className="App">
-          <label className="fcss" htmlFor="firstname">
-            Firstname:
-          </label>
           <input
             type="text"
-            placeholder=""
+            placeholder="Your firstname"
             value={firstname}
             onChange={(event) => {
               setFirstname(event.target.value);
             }}
           />
-          <label className="lcss" htmlFor="lastname">
-            Lastname:
-          </label>
+
           <input
             type="text"
-            placeholder=""
+            placeholder="Your lastname"
             value={lastname}
             onChange={(event) => {
               setLastname(event.target.value);
             }}
           />
-          <label className="ecss" htmlFor="email">
-            Email:
-          </label>
+
           <input
             type="text"
-            placeholder="your@mail.com"
+            placeholder="Your email"
             value={email}
             onChange={(event) => {
               setEmail(event.target.value);
@@ -97,8 +95,16 @@ function SubscribeBtn({ darkThemeOn }) {
           />
           <input className="scss" type="submit" value="submit" />
         </form>
-        {isUserSubscribed && <h3>Thank you for subscribing!</h3>}
-        {isUserSubscribedErr && <h3>Failed to Subcribed</h3>}
+        {isUserSubscribed && (
+          <h3 className="susc-mess">Thank you for subscribing!</h3>
+        )}
+        {isUserSubscribedErr && (
+          <h3 className="susc-mess">Failed to subcribe</h3>
+        )}
+        <div className="suscr-footer">
+          <img src={fewCloudsD} alt="" />
+          <img className="suscr-log" src={logo} alt="" />
+        </div>
       </Subscribe>
     </div>
   );
