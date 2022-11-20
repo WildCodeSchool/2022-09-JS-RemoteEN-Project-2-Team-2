@@ -9,6 +9,7 @@
   background-color: rgb(255, 255, 255);
   border: none;
   margin-bottom: 50px; 
+  margin-top: 50px; 
 }
 
 .subButtonDark {
@@ -22,6 +23,7 @@
   background-color: #3C4048;
   border: none;
   margin-bottom: 50px; 
+  margin-top: 50px; 
 }
 
 .subButton:active {
@@ -93,6 +95,12 @@ align-items: center;
   width: 135px!important;
 }
 
+.close-btn >img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 90%;
+}
+
 
 @keyframes open {
   25% {
@@ -124,8 +132,14 @@ align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
   font-family: sans-serif;
+  width: 250px;
 }
 
+.subscr-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 input {
   width: 100%;
   height: 40px;

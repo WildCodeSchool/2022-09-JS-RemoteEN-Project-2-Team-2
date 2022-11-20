@@ -59,48 +59,54 @@ function SubscribeBtn({ darkThemeOn }) {
       >
         Subscribe now
       </button>
-      <Subscribe trigger={buttonSubbtn} setTrigger={handleClose}>
-        <div className="suscr-header">
-          <h3>Subscribe</h3>
-          <p className="notification">
-            Get notification about the current weather every day
-          </p>
+      <Subscribe
+        className="subscr-pop"
+        trigger={buttonSubbtn}
+        setTrigger={handleClose}
+      >
+        <div className="subscr-form">
+          <div className="suscr-header">
+            <h3>Subscribe</h3>
+            <p className="notification">
+              Get notification about the current weather every day
+            </p>
+          </div>
+          <form onSubmit={handleSubmit} className="App">
+            <input
+              type="text"
+              placeholder="Your firstname"
+              value={firstname}
+              onChange={(event) => {
+                setFirstname(event.target.value);
+              }}
+            />
+
+            <input
+              type="text"
+              placeholder="Your lastname"
+              value={lastname}
+              onChange={(event) => {
+                setLastname(event.target.value);
+              }}
+            />
+
+            <input
+              type="text"
+              placeholder="Your email"
+              value={email}
+              onChange={(event) => {
+                setEmail(event.target.value);
+              }}
+            />
+            <input className="scss" type="submit" value="submit" />
+          </form>
+          {isUserSubscribed && (
+            <h3 className="susc-mess">Thank you for subscribing!</h3>
+          )}
+          {isUserSubscribedErr && (
+            <h3 className="susc-mess">Failed to subcribe</h3>
+          )}
         </div>
-        <form onSubmit={handleSubmit} className="App">
-          <input
-            type="text"
-            placeholder="Your firstname"
-            value={firstname}
-            onChange={(event) => {
-              setFirstname(event.target.value);
-            }}
-          />
-
-          <input
-            type="text"
-            placeholder="Your lastname"
-            value={lastname}
-            onChange={(event) => {
-              setLastname(event.target.value);
-            }}
-          />
-
-          <input
-            type="text"
-            placeholder="Your email"
-            value={email}
-            onChange={(event) => {
-              setEmail(event.target.value);
-            }}
-          />
-          <input className="scss" type="submit" value="submit" />
-        </form>
-        {isUserSubscribed && (
-          <h3 className="susc-mess">Thank you for subscribing!</h3>
-        )}
-        {isUserSubscribedErr && (
-          <h3 className="susc-mess">Failed to subcribe</h3>
-        )}
         <div className="suscr-footer">
           <img src={fewCloudsD} alt="" />
           <img className="suscr-log" src={logo} alt="" />
