@@ -164,6 +164,7 @@ flex: 2;
     display: flex;
     align-items: center;
     margin-top: 25px;
+    justify-content: center;
   }
 .weathetemp-status{
   display: flex;
@@ -239,6 +240,7 @@ background-color: #3C4048;
 
 .forecastContainer {
   margin-top: 12px;
+  margin-bottom: 12px;
   background-color: white;
     margin-right: 82px;
     margin-left: 82px;
@@ -303,5 +305,7 @@ top: 46px!important;
 .sun-position{
   margin-top: 50px;
   }
+
+
 
 }
