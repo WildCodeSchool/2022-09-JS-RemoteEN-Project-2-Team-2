@@ -73,6 +73,7 @@ function SubscribeBtn({ darkThemeOn }) {
           </div>
           <form onSubmit={handleSubmit} className="App">
             <input
+              required
               type="text"
               placeholder="Your firstname"
               value={firstname}
@@ -82,6 +83,7 @@ function SubscribeBtn({ darkThemeOn }) {
             />
 
             <input
+              required
               type="text"
               placeholder="Your lastname"
               value={lastname}
@@ -91,7 +93,8 @@ function SubscribeBtn({ darkThemeOn }) {
             />
 
             <input
-              type="text"
+              required
+              type="email"
               placeholder="Your email"
               value={email}
               onChange={(event) => {
