@@ -68,7 +68,7 @@ function SubscribeBtn({ darkThemeOn }) {
           <div className="suscr-header">
             <h3>Subscribe</h3>
             <p className="notification">
-              Get notification about the current weather every day
+              Get notified about the current weather every day
             </p>
           </div>
           <form onSubmit={handleSubmit} className="App">
