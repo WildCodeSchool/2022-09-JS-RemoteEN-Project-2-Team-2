@@ -31,6 +31,7 @@ function SubscribeBtn({ darkThemeOn }) {
       })
       .then((res) => {
         setIsUserSubscribed(true);
+        setIsUserSubscribedErr(false);
         setFirstname("");
         setLastname("");
         setEmail("");
