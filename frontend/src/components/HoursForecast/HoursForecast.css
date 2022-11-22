@@ -39,6 +39,7 @@
 
 .forecastContainer {
   margin-top: 12px;
+  margin-bottom: 34px;
   background-color: white;
     margin-right: 15px;
     margin-left: 15px;
@@ -48,6 +49,7 @@
 
 .forecastContainerDark {
   margin-top: 12px;
+  margin-bottom: 34px;
   margin-right: 15px;
   margin-left: 15px;
   border-radius: 23px 20px 0px 0px;

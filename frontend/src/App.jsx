@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import Search from "./components/search/search";
 import MainContainer from "./components/main-container/main-container";
-import SavedLocations from "./components/SavedLocations/SavedLocations";
 import SubscribeBtn from "./components/subscribe/SubscribeBtn";
 import "./App.css";
 import logo from "./assets/logo/suni_logo.png";
@@ -76,7 +75,6 @@ function App() {
       )}
       {forecast && <HoursForecast darkThemeOn={toggled} data={forecast} />}
 
-      <SavedLocations darkThemeOn={toggled} />
       <SubscribeBtn darkThemeOn={toggled} />
 
       <div className="weatherMain">

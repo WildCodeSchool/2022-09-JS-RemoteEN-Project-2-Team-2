@@ -1,5 +1,6 @@
 import React from "react";
 import "../SubscribeBtn.css";
+import close from "../../../assets/icons/close.svg";
 
 function Subscribe({ trigger, children, setTrigger }) {
   return trigger ? (
@@ -10,7 +11,7 @@ function Subscribe({ trigger, children, setTrigger }) {
           className="close-btn"
           onClick={() => setTrigger()}
         >
-          Close
+          <img src={close} alt="" />
         </button>
         {children}
       </div>

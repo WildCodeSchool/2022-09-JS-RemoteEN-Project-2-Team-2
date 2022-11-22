@@ -8,7 +8,7 @@
 
 /* Note : Since I was not able to style the Asynpaginate component, I copied the selector path in Dev Tools to select and style inside it*/
 #root > div > div > div > div {
-  border-radius: 17px;
+  border-radius: 20px;
 }
 
 #root > div > div > div > div:focus {
@@ -52,3 +52,11 @@
 #react-select-3-placeholder {
   padding-left: 20px;
 } 
+
+#react-select-3-listbox > div{
+  border-radius: 20px;
+}
+
+.css-1s2u09g-control{
+border-radius: 22px!important;
+}
