@@ -1,13 +1,30 @@
 ## Concept
+![Mockup of Suni](https://user-images.githubusercontent.com/104513836/203733858-d0823380-991b-4fe7-aabd-db2ce1dec96e.jpg)
 
 The second project of our group is based on React.js and our goal is to make a responsive weather application, named Suni.
 
-The user will be able to get, for the locations he chooses, key informations about the weather : forecast, temperatures, wind speed, humidity, air quality, sunrise and sunset hours.
+The user will be able to get, for the locations he chooses, key informations about the weather : forecast, temperatures, wind speed, humidity, feels like temperature, sunrise and sunset hours.
 
-A feature would allow the user to save up locations, and they would be able to get a forecast up to 7 days.
-We would also possibly integrate a subscription to a newsletter that would send up daily or weekly forecasts to the user.
+A feature allows the user to get a forecast up to 3 days every 6 hours.
+We also integrated a subscription to a newsletter that would send up daily or weekly forecasts to the user.
 
 You can find the wireframes on this link : https://www.figma.com/file/3twqmFxQq0SZeGTPdNYUuz/Untitled?node-id=0%3A1
+
+We used the following dependencies:
+       - axios,
+       - dotenv,
+       - react-accessible-accordion,
+       - react-select-async-paginate. 
+
+
+This project was created by the following team:
+  - Pauline Kraus: @ThisisPauline 
+  - Pierre Basck: @dreanx 
+  - Osvaldo Felices: @osvfelices 
+  - Anna Vachluk: @anna-valchuk 
+  - Russell James Corpuz: @RussellCorpuz
+
+Don't hesitate to reach out! 
 
 ## Setup & Use
 
