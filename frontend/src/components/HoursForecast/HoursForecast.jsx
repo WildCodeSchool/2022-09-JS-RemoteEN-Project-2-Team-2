@@ -81,33 +81,27 @@ function HoursForecast({ darkThemeOn, data }) {
     setDayAfter(false);
   }, [data.city]);
 
+  const formatTime = (hours24) => {
+    // 0 -> 12am
+    // 1-11 -> 1-11am
+    // 12 -> 12pm
+    // 12-23 -> 1-11pm
+
+    if (hours24 < 12) return `${hours24 === 0 ? 12 : hours24} AM`;
+    return `${hours24 === 12 ? 12 : hours24 - 12} PM`;
+  };
+
   const dateToday1 = new Date(data.list[0].dt_txt);
-  const dateHour1 = dateToday1.toLocaleDateString("en-us", {
-    hour: "numeric",
-  });
-  const hourArray1 = dateHour1.split("");
-  const finalHour1 = hourArray1.slice(11).join("");
+  const finalHour1 = formatTime(dateToday1.getHours());
 
   const dateToday2 = new Date(data.list[2].dt_txt);
-  const dateHour2 = dateToday2.toLocaleDateString("en-us", {
-    hour: "numeric",
-  });
-  const hourArray2 = dateHour2.split("");
-  const finalHour2 = hourArray2.slice(11).join("");
+  const finalHour2 = formatTime(dateToday2.getHours());
 
   const dateToday3 = new Date(data.list[4].dt_txt);
-  const dateHour3 = dateToday3.toLocaleDateString("en-us", {
-    hour: "numeric",
-  });
-  const hourArray3 = dateHour3.split("");
-  const finalHour3 = hourArray3.slice(11).join("");
+  const finalHour3 = formatTime(dateToday3.getHours());
 
   const dateToday4 = new Date(data.list[6].dt_txt);
-  const dateHour4 = dateToday4.toLocaleDateString("en-us", {
-    hour: "numeric",
-  });
-  const hourArray4 = dateHour4.split("");
-  const finalHour4 = hourArray4.slice(11).join("");
+  const finalHour4 = formatTime(dateToday4.getHours());
 
   return (
     <div
