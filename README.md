@@ -15,6 +15,9 @@ We used the following dependencies:
        - dotenv,
        - react-select-async-paginate. 
 
+Framework:
+       - Tailwind CSS. 
+
 
 This project was created by the following team:
   - Pauline Kraus: @ThisisPauline 
