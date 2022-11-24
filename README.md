@@ -1,6 +1,8 @@
 ## Concept
 ![Mockup of Suni](https://user-images.githubusercontent.com/104513836/203733858-d0823380-991b-4fe7-aabd-db2ce1dec96e.jpg)
 
+check the live version of our project: https://suniweather.wcs-student-projects.d-a-pfeiffer.info
+
 The second project of our group is based on React.js and our goal is to make a responsive weather application, named Suni.
 
 The user will be able to get, for the locations he chooses, key informations about the weather : forecast, temperatures, wind speed, humidity, feels like temperature, sunrise and sunset hours.
