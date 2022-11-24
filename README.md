@@ -13,7 +13,6 @@ You can find the wireframes on this link : https://www.figma.com/file/3twqmFxQq0
 We used the following dependencies:
        - axios,
        - dotenv,
-       - react-accessible-accordion,
        - react-select-async-paginate. 
 
 
